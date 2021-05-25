@@ -41,13 +41,15 @@ router.afterEach(() => {
   const appLoading = document.getElementById('loading-bg')
   const logoLoading = document.getElementById('loading-logo')
   const spinnerLoading = document.getElementById('loading-spinner')
+  const appDiv = document.getElementById('app')
   if (appLoading) {
     setTimeout(() => {
       logoLoading.style.display = 'none'
       spinnerLoading.style.display = 'none'
       appLoading.style.background = 'transparent'
-      appLoading.style.zIndex = '1'
-    }, 1000);
+      appLoading.style.zIndex = '0'
+      appDiv.style.display = 'initial'
+    }, 2500);
   }
 })
 export default router;

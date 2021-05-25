@@ -3,10 +3,14 @@
   height: 100%;
   background: #FFF;
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   transition: 0.5s ease-in-out;
-  overflow:hidden!important;
+  /* overflow:hidden!important; */
+}
+
+#app {
+  display: none;
 }
 
 #loading-bg .closing{
