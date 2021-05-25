@@ -46,7 +46,8 @@ router.afterEach(() => {
       logoLoading.style.display = 'none'
       spinnerLoading.style.display = 'none'
       appLoading.style.background = 'transparent'
-    }, 8000);
+      appLoading.style.zIndex = '1'
+    }, 1000);
   }
 })
 export default router;
