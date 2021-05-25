@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+// import Home from "../views/Home.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Home.vue"),
   },
   {
     path: "/about",
@@ -35,4 +36,17 @@ const router = createRouter({
   routes,
 });
 
+router.afterEach(() => {
+  // Remove initial loading
+  const appLoading = document.getElementById('loading-bg')
+  const logoLoading = document.getElementById('loading-logo')
+  const spinnerLoading = document.getElementById('loading-spinner')
+  if (appLoading) {
+    setTimeout(() => {
+      logoLoading.style.display = 'none'
+      spinnerLoading.style.display = 'none'
+      appLoading.style.background = 'transparent'
+    }, 8000);
+  }
+})
 export default router;
