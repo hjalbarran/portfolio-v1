@@ -1,38 +1,45 @@
 <template>
-  <div id="app">
+  <div>
     <router-link :to="{ name: 'Home' }">Home</router-link> |
     <router-link to="/about">About</router-link> | 
     <router-link :to="{ name: 'projectDetails', params:{ projectName:'Offyrus' }}">Project Details</router-link> | 
     <router-link :to="{ name: 'contact' }">Contact</router-link>
-  </div>
-  <nav class="flex justify-between left-0 right-0 fixed top-0 z-10">
-    <figure class="m-4">
-      <img :src="require('@/assets/images/logo-empty.png')" alt="" class="w-14">
-    </figure>
-    <button class="m-4" @click="openNav()">abrir</button>
-  </nav>
-  <div id="myNav" class="overlay bg-black bg-opacity-80">
-    <button class="m-4 absolute top-0 right-0" @click="closeNav()">cerrar</button>
-    <div class="overlay-content relative text-center mt-10">
-      <router-link to="/" class="text-4xl" @click="closeNav()">
-        Home
-      </router-link>
-      <router-link to="/about" class="text-4xl" @click="closeNav()">
-        About
-      </router-link>
-      <router-link to="/contact" class="text-4xl" @click="closeNav()">
-        Contact
-      </router-link>
-    </div>
-  </div>
-
-  <!-- <div>
-    <ResponsiveNavigation
-    :navLinks='navLinks'
-    />  
-  </div> -->
   
-  <router-view />
+    <nav class="flex justify-between left-0 right-0 fixed top-0 z-10">
+      <figure class="m-4">
+        <img :src="require('@/assets/images/logo-empty.png')" alt="" class="w-14">
+      </figure>
+      <button class="m-4" @click="openNav()">abrir</button>
+    </nav>
+    <div id="myNav" class="overlay bg-black bg-opacity-80">
+      <button class="m-4 absolute top-0 right-0" @click="closeNav()">cerrar</button>
+      <div class="overlay-content relative text-center mt-10">
+        <router-link to="/" class="text-4xl" @click="closeNav()">
+          Home
+        </router-link>
+        <router-link to="/about" class="text-4xl" @click="closeNav()">
+          About
+        </router-link>
+        <router-link to="/contact" class="text-4xl" @click="closeNav()">
+          Contact
+        </router-link>
+      </div>
+    </div>
+
+    <!-- <div>
+      <ResponsiveNavigation
+      :navLinks='navLinks'
+      />  
+    </div> -->
+
+    <!-- <router-view /> -->
+
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+  </div>
 </template>
 
 <script>
@@ -42,7 +49,7 @@ export default {
   components: {
     // ResponsiveNavigation
   },
-  data() {
+  data () {
     return {
       navLinks: [
         {
@@ -60,16 +67,16 @@ export default {
           path: '/contact',
           icon: ''
         }
-      ],
+      ]
       // background: "#CFCDCA"
     }
   },
   methods: {
-    openNav() {
-      document.getElementById("myNav").style.height = "100%"
+    openNav () {
+      document.getElementById('myNav').style.height = '100%'
     },
-    closeNav() {
-      document.getElementById("myNav").style.height = "0%"
+    closeNav () {
+      document.getElementById('myNav').style.height = '0%'
     }
   }
 }
@@ -102,5 +109,15 @@ export default {
 
 .overlay a:hover {
   color: white;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
 }
 </style>

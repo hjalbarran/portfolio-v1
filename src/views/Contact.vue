@@ -1,4 +1,5 @@
 <template>
+<div>
     <section class="text-gray-600 body-font relative">
         <div class="absolute inset-0 bg-gray-300 right-0 md:right-64">
             <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
@@ -82,6 +83,7 @@
             </div>
         </div>
     </section>
+    </div>
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+<div>
     <h1>Este es project: {{ projectName }}</h1>
 
     <section class="text-gray-800 body-font">
@@ -69,16 +70,17 @@
             </div>
         </div>
     </section>
+    </div>
 </template>
 
 <script>
 export default {
-    props: ['projectName'],
-    data() {
-        return {
+  props: ['projectName'],
+  data () {
+    return {
 
-        }
     }
+  }
 }
 </script>
 
