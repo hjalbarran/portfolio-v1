@@ -1,10 +1,10 @@
 <template>
 <div>
     <section class="text-gray-600 body-font relative">
-        <div class="absolute inset-0 bg-gray-300 right-0 md:right-64">
+        <div class="absolute inset-0 bg-gray-300 right-0 md:right-64 first-animation">
             <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
         </div>
-        <div class="container px-5 py-24 mx-auto flex md:visible invisible">
+        <div class="container px-5 py-24 mx-auto flex md:visible invisible first-animation">
             <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md text-center">
                 <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-6xl">
                     <span class="block xl:inline">Let's work together!</span>
@@ -16,12 +16,12 @@
         <div class="container flex flex-wrap px-5 pt-24 mx-auto">
             <div class="lg:w-4/12 md:w-5/12 sm:w-6/12 sm:text-center lg:text-left">
                 <div class="mb-12">
-                    <h5 class="tracking-widest text-gray-600 mb-4">CONTACT</h5>
+                    <h5 class="tracking-widest text-gray-600 mb-4 second-animation">CONTACT</h5>
                     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-                        <span class="block xl:inline">Get in touch - Let's work together!</span>
+                        <span class="block xl:inline third-animation">Get in touch - Let's work together!</span>
                     </h1>
                 </div>
-                <div class="mb-8">
+                <div class="mb-8 fourth-animation">
                     <h5 class="tracking-widest text-gray-600 mb-1">MY ROLE</h5>
                     <ul class="list-none font-semibold">
                         <li>Brand Designer</li>
@@ -54,9 +54,9 @@
                 </span>
             </div>
             <div class="lg:w-8/12 md:w-7/12 sm:w-6/12 sm:text-center lg:text-justify px-4">
-                <h3 class="text-xl text-gray-400 font-semibold">Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</h3>
+                <h3 class="text-xl text-gray-400 font-semibold second-animation">Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</h3>
                 <div class="container mx-auto pt-8">
-                    <div class="flex flex-wrap -m-2">
+                    <div class="flex flex-wrap -m-2 third-animation">
                         <div class="p-2 w-1/2">
                             <div class="relative">
                                 <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
