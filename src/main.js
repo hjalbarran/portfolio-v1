@@ -1,7 +1,12 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-import "./assets/tailwind.css";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import './assets/tailwind.css'
+import ScrollAnimation from './directives/scrollanimation.js'
 
-createApp(App).use(store).use(router).mount("#app");
+const app = createApp(App)
+app.directive('scrollanimation', ScrollAnimation)
+app.use(store)
+app.use(router)
+app.mount('#app')

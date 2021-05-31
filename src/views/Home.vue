@@ -9,16 +9,16 @@
           </svg>
           <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div class="sm:text-center lg:text-left">
-              <h5 class="tracking-widest text-gray-600 mb-4">HUMBERTO ALBARRÁN</h5>
-              <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h5 class="tracking-widest text-gray-600 mb-4 first-animation">HUMBERTO ALBARRÁN</h5>
+              <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl second-animation">
                 <span class="block xl:inline">Frontend Web Developer</span>
                 {{ '  ' }}
                 <!-- <span class="block text-indigo-600 xl:inline">Vue JS</span> -->
               </h1>
-              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 third-animation">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
               </p>
-              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start fourth-animation">
                 <div class="rounded-md shadow">
                   <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                     See Projects
@@ -43,8 +43,8 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="sm:text-center lg:text-left">
-          <h5 class="tracking-widest text-gray-600 mb-4">SELECTED PROJECTS</h5>
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32">
+          <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>
             <span class="block xl:inline">Case studies</span>
           </h1>
         </div>
@@ -76,7 +76,7 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-          <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.</h1>
+          <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900" v-scrollanimation>Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.</h1>
           <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Button</button>
         </div>
       </div>
@@ -97,3 +97,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.before-enter {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .6s linear;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0px);
+}
+</style>
