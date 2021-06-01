@@ -1,9 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div>
-    <div class="relative bg-white overflow-hidden">
+    <div class="relative overflow-hidden">
       <div class="max-w-7xl mx-auto">
-        <div class=" z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <div class="pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
@@ -35,10 +35,22 @@
           
         </div>
       </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom">
         <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19.jpg')" alt="" />
       </div>
     </div>
+
+    <section class="z-100 -mt-8">
+      <div class="container px-5 mx-auto">
+          <div class="scrolldown">
+            <svg height="30" width="10" class="svg-custom">
+              <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+              <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+            </svg>
+          </div>
+      </div>
+    </section>
+
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
@@ -99,10 +111,57 @@ export default {
 </script>
 
 <style scoped>
+.z-index-custom {
+  z-index: -1;
+}
+/* Scroll Down */
+  
+.scrolldown {
+  border: 2px solid #000;
+  border-radius: 30px;
+  height: 46px;
+  margin: 0 auto 8px;
+  text-align: center;
+  width: 30px;
+}
+
+.svg-custom {
+  margin-left: 8px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+  width: 30px;
+  left: 15px!important;
+  animation-duration: 1.5s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  fill: #000;
+}
+  
+.scrolldown-p2 {
+  animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
+}
+
 .before-enter {
   opacity: 0;
   transform: translateY(30px);
-  transition: all .6s linear;
+  transition: all .5s linear;
 }
 
 .enter {

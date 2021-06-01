@@ -40,7 +40,7 @@ router.afterEach(() => {
   if (appLoading) {
     setTimeout(() => {
       appLoading.style.display = 'none'
-    }, 2500)
+    }, 0)
   }
 })
 export default router
