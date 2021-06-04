@@ -154,7 +154,7 @@ export default {
 .before-enter {
   opacity: 0;
   transform: translateY(30px);
-  transition: all .5s linear;
+  transition: all .4s linear;
 }
 
 .enter {

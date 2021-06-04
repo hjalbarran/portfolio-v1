@@ -1,9 +1,9 @@
 <template>
   <div>
-    <router-link :to="{ name: 'Home' }">Home</router-link> |
+    <!-- <router-link :to="{ name: 'Home' }">Home</router-link> |
     <router-link to="/about">About</router-link> | 
     <router-link :to="{ name: 'projectDetails', params:{ projectName:'Offyrus' }}">Project Details</router-link> | 
-    <router-link :to="{ name: 'contact' }">Contact</router-link>
+    <router-link :to="{ name: 'contact' }">Contact</router-link> -->
   
     <nav class="flex justify-between left-0 right-0 fixed top-0 z-10">
       <figure class="m-4">
@@ -11,26 +11,35 @@
       </figure>
       <button class="m-4" @click="openNav()">abrir</button>
     </nav>
-    <div id="myNav" class="overlay bg-black bg-opacity-80">
-      <button class="m-4 absolute top-0 right-0" @click="closeNav()">cerrar</button>
-      <div class="overlay-content relative text-center mt-10">
-        <router-link to="/" class="text-4xl" @click="closeNav()">
-          Home
-        </router-link>
-        <router-link to="/about" class="text-4xl" @click="closeNav()">
-          About
-        </router-link>
-        <router-link to="/contact" class="text-4xl" @click="closeNav()">
-          Contact
-        </router-link>
+    <div id="myNav" class="overlay bg-black bg-opacity-90 flex content-center">
+      <button class="m-4 absolute top-0 right-0 text-white" @click="closeNav()">cerrar</button>
+      <div class="overlay-content relative text-center mt-10 w-auto mx-auto">
+        <transition name="fade">
+          <h5 class="tracking-widest text-gray-600 mb-3" v-if="show">MENU</h5>
+        </transition>
+        <transition name="slide-fade1">
+          <router-link to="/" @click="closeNav()" v-if="show">
+            <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+              <span class="block xl:inline">Portfolio</span>
+            </h1>
+          </router-link>
+        </transition>
+        <transition name="slide-fade2">
+          <router-link to="/about" @click="closeNav()" v-if="show">
+            <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+              <span class="block xl:inline">About me</span>
+            </h1>
+          </router-link>
+        </transition>
+        <transition name="slide-fade3">
+          <router-link to="/contact" @click="closeNav()" v-if="show">
+            <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+              <span class="block xl:inline">Contact</span>
+            </h1>
+          </router-link>
+        </transition>
       </div>
     </div>
-
-    <!-- <div>
-      <ResponsiveNavigation
-      :navLinks='navLinks'
-      />  
-    </div> -->
 
     <!-- <router-view /> -->
 
@@ -43,39 +52,22 @@
 </template>
 
 <script>
-// import ResponsiveNavigation from '@/components/ResponsiveNavigation'
 export default {
   name: 'app',
   components: {
-    // ResponsiveNavigation
   },
   data () {
     return {
-      navLinks: [
-        {
-          text: 'Portfolio',
-          path: '/',
-          icon: ''
-        },
-        {
-          text: 'About me',
-          path: '/about',
-          icon: ''
-        },
-        {
-          text: 'Contact',
-          path: '/contact',
-          icon: ''
-        }
-      ]
-      // background: "#CFCDCA"
+      show: false
     }
   },
   methods: {
     openNav () {
+      this.show = !this.show
       document.getElementById('myNav').style.height = '100%'
     },
     closeNav () {
+      this.show = !this.show
       document.getElementById('myNav').style.height = '0%'
     }
   }
@@ -83,6 +75,10 @@ export default {
 </script>
 
 <style>
+.router-link-active,
+.router-link-exact-active {
+  color:#fff!important;
+}
 .overlay {
   height: 0%;
   width: 100%;
@@ -111,17 +107,85 @@ export default {
   color: white;
 }
 
-.fade-enter-from,
+/* ANIMATION TU CURTAIN MENU */
+/* 'menu' word header*/
+.fade-enter-from {
+  opacity: 0;
+}
 .fade-leave-to {
   opacity: 0;
 }
 
-.fade-enter-active,
+.fade-enter-active {
+  transition: opacity 0.3s ease-out;
+  transition-delay: .3s;
+}
 .fade-leave-active {
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
-/** FIRST APEAR ANIMATIONS */
+/* 1st item */
+.slide-fade1-enter-active {
+  transition: all 0.3s ease-out;
+  transition-delay: .3s;
+}
+
+.slide-fade1-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade1-enter-from {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-fade1-leave-to {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+
+/* 2nd item */
+.slide-fade2-enter-active {
+  transition: all 0.3s ease-out;
+  transition-delay: .4s;
+}
+
+.slide-fade2-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade2-enter-from {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-fade2-leave-to {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+/* 3rd item */
+.slide-fade3-enter-active {
+  transition: all 0.3s ease-out;
+  transition-delay: .5s;
+}
+
+.slide-fade3-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade3-enter-from {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-fade3-leave-to {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+/** FIRST APPEAR ANIMATIONS */
 .first-animation {
   -webkit-animation: animation-1st .6s linear;
   animation: animation-1st .6s linear;
