@@ -11,7 +11,8 @@
       </figure>
       <button class="m-4" @click="openNav()">abrir</button>
     </nav>
-    <div id="myNav" class="overlay bg-black bg-opacity-90 flex content-center">
+
+    <div id="myNav" class="flex flex-col overlay bg-black bg-opacity-100 flex content-center">
       <button class="m-4 absolute top-0 right-0 text-white" @click="closeNav()">cerrar</button>
       <div class="overlay-content relative text-center mt-10 w-auto mx-auto">
         <transition name="fade">
@@ -37,6 +38,9 @@
               <span class="block xl:inline">Contact</span>
             </h1>
           </router-link>
+        </transition>
+        <transition name="fade">
+          <p class="tracking-tighter text-gray-600 mt-40" v-if="show">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Caracas, Venezuela.</p>
         </transition>
       </div>
     </div>
@@ -86,12 +90,14 @@ export default {
   top: 0;
   left: 0;
   overflow: hidden;
+  overflow-y: hidden;
   z-index: 20;
   transition: 0.5s ease-in-out
 }
 
 .overlay-content {
   top:25%;
+  overflow-y: hidden;
 }
 
 .overlay a {
