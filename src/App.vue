@@ -1,9 +1,5 @@
 <template>
   <div>
-    <!-- <router-link :to="{ name: 'Home' }">Home</router-link> |
-    <router-link to="/about">About</router-link> | 
-    <router-link :to="{ name: 'projectDetails', params:{ projectName:'Offyrus' }}">Project Details</router-link> | 
-    <router-link :to="{ name: 'contact' }">Contact</router-link> -->
     <transition name="fade" appear>
       <nav class="flex justify-between nav-background left-0 right-0 fixed top-0 z-10">
         <figure class="mt-4 ml-8 mb-4">

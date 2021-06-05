@@ -3,57 +3,54 @@
   <div>
     <div class="relative overflow-hidden">
       <div class="max-w-7xl mx-auto">
-        <div class="pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <div class="pb-8 pt-12 sm:py-16 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <!-- <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
             <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
+          </svg> -->
           <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div class="sm:text-center lg:text-left">
               <h5 class="tracking-widest text-gray-600 mb-4 first-animation">HUMBERTO ALBARRÁN</h5>
               <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl second-animation">
                 <span class="block xl:inline">Frontend Web Developer</span>
                 {{ '  ' }}
-                <!-- <span class="block text-indigo-600 xl:inline">Vue JS</span> -->
+                <span class="block text-gray-600 xl:inline">Vue JS</span>
               </h1>
               <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 third-animation">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                Tengo más de 7 años envuelto en la tecnología web, y he usado distintas plataformas y herramientas desde el comienzo. Actualmente me he enfocado en el desarrollo web frontend.
               </p>
               <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start fourth-animation">
                 <div class="rounded-md shadow">
-                  <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                  <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 md:py-4 md:text-lg md:px-10" v-scroll-to="{ el: '#fase-1', offset: 0 }">
                     See Projects
                   </a>
                 </div>
                 <div class="mt-3 sm:mt-0 sm:ml-3">
-                  <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                  <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-gray-100 hover:bg-gray-200 md:py-4 md:text-lg md:px-10">
                     About Me
                   </a>
                 </div>
               </div>
             </div>
           </main>
-          
         </div>
       </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom">
-        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19.jpg')" alt="" />
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom md:w-1/2 md:mx-auto w-1/3 mx-auto">
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19-3.png')" alt="" />
       </div>
     </div>
 
-    <section class="z-100 -mt-8">
-      <div class="container px-5 mx-auto">
-          <div class="scrolldown">
-            <svg height="30" width="10" class="svg-custom">
-              <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-              <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
-            </svg>
-          </div>
-      </div>
-    </section>
+    <div class="container mx-auto mt-1"> 
+        <div class="scrolldown" v-scroll-to="{ el: '#fase-1', offset: 0 }">
+          <svg height="30" width="10" class="svg-custom">
+            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+          </svg>
+        </div>
+    </div>
 
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div id="fase-1" class="container px-5 py-24 mx-auto">
         <div class="sm:text-center lg:text-left">
           <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>
