@@ -4,46 +4,45 @@
     <router-link to="/about">About</router-link> | 
     <router-link :to="{ name: 'projectDetails', params:{ projectName:'Offyrus' }}">Project Details</router-link> | 
     <router-link :to="{ name: 'contact' }">Contact</router-link> -->
-    <transition name="fade" appear>
-      <nav class="flex justify-between nav-background left-0 right-0 fixed top-0 z-10">
-        <figure class="mt-4 ml-8 mb-4">
-          <img :src="require('@/assets/images/logo-empty.png')" alt="" class="w-14">
-        </figure>
-        <button class="mt-4 mr-8 mb-4 tracking-wider text-base text-black font-bold" @click="openNav()">MENU</button>
-      </nav>
-    </transition>
+  
+    <nav class="flex justify-between left-0 right-0 fixed top-0 z-10">
+      <figure class="m-4">
+        <img :src="require('@/assets/images/logo-empty.png')" alt="" class="w-14">
+      </figure>
+      <button class="m-4" @click="openNav()">abrir</button>
+    </nav>
 
-    <div id="myNav" class="flex overlay bg-black bg-opacity-95">
-        <button class="mt-8 mr-8 mb-4 absolute top-0 right-0 tracking-wider text-base text-gray-500 font-bold close-button" @click="closeNav()">CLOSE</button>
-        <div class="overlay-content relative text-center mt-10 w-auto mx-auto">
-          <transition name="fade">
-            <h5 class="tracking-widest text-gray-500 mb-3" v-if="show">MENU</h5>
-          </transition>
-          <transition name="slide-fade1">
-            <router-link to="/" @click="closeNav()" v-if="show">
-              <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
-                <span class="block xl:inline">Portfolio</span>
-              </h1>
-            </router-link>
-          </transition>
-          <transition name="slide-fade2">
-            <router-link to="/about" @click="closeNav()" v-if="show">
-              <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
-                <span class="block xl:inline">About me</span>
-              </h1>
-            </router-link>
-          </transition>
-          <transition name="slide-fade3">
-            <router-link to="/contact" @click="closeNav()" v-if="show">
-              <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
-                <span class="block xl:inline">Contact</span>
-              </h1>
-            </router-link>
-          </transition>
-          <transition name="fade">
-            <p class="tracking-tighter text-gray-500 mt-40" v-if="show">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Caracas, Venezuela.</p>
-          </transition>
-        </div>
+    <div id="myNav" class="flex flex-col overlay bg-black bg-opacity-100 flex content-center">
+      <button class="m-4 absolute top-0 right-0 text-white" @click="closeNav()">cerrar</button>
+      <div class="overlay-content relative text-center mt-10 w-auto mx-auto">
+        <transition name="fade">
+          <h5 class="tracking-widest text-gray-600 mb-3" v-if="show">MENU</h5>
+        </transition>
+        <transition name="slide-fade1">
+          <router-link to="/" @click="closeNav()" v-if="show">
+            <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+              <span class="block xl:inline">Portfolio</span>
+            </h1>
+          </router-link>
+        </transition>
+        <transition name="slide-fade2">
+          <router-link to="/about" @click="closeNav()" v-if="show">
+            <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+              <span class="block xl:inline">About me</span>
+            </h1>
+          </router-link>
+        </transition>
+        <transition name="slide-fade3">
+          <router-link to="/contact" @click="closeNav()" v-if="show">
+            <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+              <span class="block xl:inline">Contact</span>
+            </h1>
+          </router-link>
+        </transition>
+        <transition name="fade">
+          <p class="tracking-tighter text-gray-600 mt-40" v-if="show">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Caracas, Venezuela.</p>
+        </transition>
+      </div>
     </div>
 
     <!-- <router-view /> -->
@@ -63,7 +62,6 @@ export default {
   },
   data () {
     return {
-      isActive: false,
       show: false
     }
   },
@@ -81,14 +79,6 @@ export default {
 </script>
 
 <style>
-.nav-background {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(0, 0, 0, 0));
-}
-
-.close-button:hover {
-  color: #fff!important;
-}
-
 .router-link-active,
 .router-link-exact-active {
   color:#fff!important;
@@ -99,7 +89,6 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
   z-index: 20;
   transition: 0.5s ease-in-out
 }
