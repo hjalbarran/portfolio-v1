@@ -85,6 +85,20 @@
     </section>
 
     <section class="text-gray-600 body-font">
+      <div id="fase-1" class="container px-5 py-24 mx-auto">
+        <div class="sm:text-center lg:text-left">
+          <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>
+            <span class="block xl:inline">Case studies</span>
+          </h1>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <project-card v-for="project in projects" :key="project.id" :project="project"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
           <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900" v-scrollanimation>Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.</h1>
@@ -96,26 +110,34 @@
 </template>
 
 <script>
-const navigation = []
+import ProjectCard from '@/components/ProjectCard.vue'
+
 
 export default {
   components: {
+    ProjectCard
   },
-  setup () {
+  data () {
     return {
-      navigation
+      projects: [
+        {
+          id: 1,
+          title: 'Offyrus',
+          description: 'description Offyrus'
+        },
+        {
+          id: 2,
+          title: 'Cohen & Aguirre',
+          description: 'description C&A'
+        }
+      ]
     }
   }
+
 }
 </script>
 
 <style scoped>
-.fade-hover:hover {
-  transition:ease-out .3s;
-  opacity: 1
-
-}
-
 .z-index-custom {
   z-index: -1;
 }
