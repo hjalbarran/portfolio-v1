@@ -92,6 +92,8 @@
             <span class="block xl:inline">Case studies</span>
           </h1>
         </div>
+      </div>
+      <div class="container items-center px-5 py-8 mx-auto lg:px-0">
         <div class="flex flex-wrap -m-4">
           <project-card v-for="project in projects" :key="project.id" :project="project"/>
         </div>
@@ -129,6 +131,16 @@ export default {
           id: 2,
           title: 'Cohen & Aguirre',
           description: 'description C&A'
+        },
+        {
+          id: 3,
+          title: 'Vendatumano',
+          description: 'description VDTM'
+        },
+        {
+          id: 4,
+          title: 'Ultratech',
+          description: 'description Ultratech'
         }
       ]
     }
