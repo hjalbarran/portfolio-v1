@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 mx-auto bg-white border rounded-lg shadow-xl lg:w-1/2 cursor-pointer" @click="projectDetailsURL(project.title)">
+  <div class="p-6 mx-auto bg-white border rounded-lg shadow-xl lg:w-1/2 cursor-pointer" @click="projectDetailsURL(project.slug)">
     <div class="flex flex-col items-start py-2 rounded-lg sm:flex-row">
       <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
         <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">
@@ -20,8 +20,8 @@ export default {
     project: Object
   },
   methods: {
-    projectDetailsURL (projectTitle) {
-      this.$router.push({ name:'projectDetails', params: {projectName:projectTitle} })
+    projectDetailsURL (projectSlug) {
+      this.$router.push({ name:'projectDetails', params: {projectName:projectSlug} })
     }
   }
 

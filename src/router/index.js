@@ -16,7 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/project/:projectName',
+    path: '/project/:projectSlug',
     name: 'projectDetails',
     component: () => import(/* webpackChunkName: "about" */ '../views/ProjectDetails.vue'),
     props: true
@@ -31,7 +31,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ left: 0, top: 0 })
+      }, 0)
+    })
+  }
 })
 
 router.afterEach(() => {
