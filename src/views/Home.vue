@@ -51,7 +51,7 @@
     </div> -->
 
 
-    <section class="text-gray-600 body-font">
+    <!-- <section class="text-gray-600 body-font">
       <div id="fase-1" class="container px-5 py-24 mx-auto">
         <div class="sm:text-center lg:text-left">
           <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
@@ -82,10 +82,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="text-gray-600 body-font">
-      <div id="fase-1" class="container px-5 py-24 mx-auto">
+      <div id="fase-1" class="container px-5 pt-24 pb-0 mx-auto">
         <div class="sm:text-center lg:text-left">
           <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>
@@ -124,23 +124,45 @@ export default {
       projects: [
         {
           id: 1,
-          title: 'Offyrus',
-          description: 'description Offyrus'
+          title: 'Portfolio',
+          work: 'Vue JS Website Developer',
+          year: '2021'
         },
         {
           id: 2,
-          title: 'Cohen & Aguirre',
-          description: 'description C&A'
+          title: 'Cohen & Aguirre Lobby Solutions',
+          work: 'Vue JS Frontend Web Developer / DevOps',
+          year: '2019-current'
         },
         {
           id: 3,
-          title: 'Vendatumano',
-          description: 'description VDTM'
+          title: 'Offyrus',
+          work: 'Ecommerce & Graphic Designer',
+          year: '2017-2021'
         },
         {
           id: 4,
+          title: 'Ven Da Tu Mano - ONG',
+          work: 'Wordpress Website Design',
+          year: '2021'
+        },
+        {
+          id: 5,
           title: 'Ultratech',
-          description: 'description Ultratech'
+          work: 'Wordpress Website Design',
+          year: '2020-2021'
+        },
+        {
+          id: 6,
+          title: 'SJT Language',
+          work: 'Wordpress Website Design',
+          year: '2018'
+        },
+        {
+          id: 7,
+          title: 'EC Global US',
+          work: 'Wordpress Developer',
+          year: '2018'
         }
       ]
     }
