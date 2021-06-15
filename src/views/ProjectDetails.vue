@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Este es project: {{ projectName }}</h1>
+    <h1>Este es project: {{ projectSlug }}</h1>
 
     <section class="text-gray-800 body-font">
         <div class="container flex flex-wrap px-5 pt-24 mx-auto">
@@ -75,7 +75,7 @@
 
 <script>
 export default {
-  props: ['projectName'],
+  props: ['projectSlug'],
   data () {
     return {
 

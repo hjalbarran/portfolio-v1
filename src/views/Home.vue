@@ -126,49 +126,49 @@ export default {
           id: 1,
           title: 'Portfolio',
           slug: 'portfolio',
-          work: 'Vue JS Website Developer',
+          shortRole: 'Vue JS Website Developer',
           year: '2021'
         },
         {
           id: 2,
           title: 'Cohen & Aguirre Lobby Solutions',
           slug: 'Cohen&Aguirre',
-          work: 'Vue JS Frontend Web Developer / DevOps',
+          shortRole: 'Vue JS Frontend Web Developer / DevOps',
           year: '2019-current'
         },
         {
           id: 3,
           title: 'Offyrus',
           slug: 'Offyrus',
-          work: 'Ecommerce & Graphic Designer',
+          shortRole: 'Ecommerce & Graphic Designer',
           year: '2017-2021'
         },
         {
           id: 4,
           title: 'Ven Da Tu Mano - ONG',
           slug: 'VenDaTuMano',
-          work: 'Wordpress Website Design',
+          shortRole: 'Wordpress Website Design',
           year: '2021'
         },
         {
           id: 5,
           title: 'Ultratech',
           slug: 'Ultratech',
-          work: 'Wordpress Website Design',
+          shortRole: 'Wordpress Website Design',
           year: '2020-2021'
         },
         {
           id: 6,
           title: 'SJT Language',
           slug: 'SJTLanguage',
-          work: 'Wordpress Website Design',
+          shortRole: 'Wordpress Website Design',
           year: '2018'
         },
         {
           id: 7,
           title: 'EC Global US',
           slug: 'ECGlobalUS',
-          work: 'Wordpress Developer',
+          shortRole: 'Wordpress Developer',
           year: '2018'
         }
       ]
