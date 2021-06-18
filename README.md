@@ -1,4 +1,6 @@
 # portfolio-v1
+This is my personal protfolio. 
+Hey!!! It's not finished...
 
 ## Project setup
 ```
