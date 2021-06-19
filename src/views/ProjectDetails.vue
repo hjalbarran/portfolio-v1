@@ -5,44 +5,60 @@
     <section class="text-gray-800 body-font">
         <div class="container flex flex-wrap px-5 pt-24 mx-auto">
             <div class="lg:w-4/12 md:w-5/12 sm:w-6/12 sm:text-center lg:text-left">
-                <div class="mb-12">
-                    <h5 class="tracking-widest text-gray-600 mb-4 first-animation">PROJECT CASE</h5>
+                <div class="mb-8">
+                    <h5 class="tracking-widest text-gray-600 mb-2 first-animation">PROJECT CASE</h5>
                     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl second-animation">
-                        <span class="block xl:inline">Website Developer for an ecommerce</span>
+                        <!-- <span class="block xl:inline">Website Developer for an ecommerce</span> -->
+                        <span class="block xl:inline">{{ project.shortRole }}</span>
                     </h1>
                 </div>
-                <div class="mb-8 third-animation">
+                <div class="mb-5 third-animation">
                     <h5 class="tracking-widest text-gray-600 mb-1">MY ROLE</h5>
                     <ul class="list-none font-semibold">
-                        <li>Brand Designer</li>
-                        <li>Website Builder</li>
-                        <li>Graphic Design Assesment</li>
+                        <li v-for="(role, index) in project.myRole" :key="index">
+                            {{ role }}
+                        </li>
                     </ul>
                 </div>
-                <div class="mb-8 third-animation">
-                    <h5 class="tracking-widest text-gray-600 mb-1">CLIENT</h5>
+                <div class="mb-5 third-animation">
+                    <h5 class="tracking-widest text-gray-600 mb-1">CLIENT & COUNTRY</h5>
                     <ul class="list-none font-semibold">
-                        <li>Albarrán & Rocha S.L.</li>
+                        <li>{{ project.client }}</li>
                     </ul>
                 </div>
-                <div class="mb-8 third-animation">
+                <div class="mb-5 third-animation">
                     <h5 class="tracking-widest text-gray-600 mb-1">YEAR</h5>
                     <ul class="list-none font-semibold">
-                        <li>2019 - 2021</li>
+                        <li>{{ project.year }}</li>
                     </ul>
                 </div>
+                <div class="mb-5 third-animation">
+                    <h5 class="tracking-widest text-gray-600 mb-1">WEB PAGE</h5>
+                    <ul class="list-none font-semibold">
+                        <li>
+                            <a :href="`https://${project.webpage}`" target="_blank">{{ project.webpage }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-5 third-animation">
+                    <h5 class="tracking-widest text-gray-600 mb-1">TECH</h5>
+                    <ul class="list-none font-semibold">
+                        <li v-for="(tech, index) in project.technologies" :key="index">
+                            {{ tech }}
+                        </li>
+                    </ul>
+                </div>                
             </div>
             <div class="lg:w-8/12 md:w-7/12 sm:w-6/12 sm:text-center lg:text-justify px-4 fourth-animation">
-                <h3 class="text-xl text-gray-400 font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor. Arcu non sodales neque sodales ut. Sodales ut etiam sit amet nisl purus in mollis nunc. Erat velit scelerisque in dictum non consectetur a erat. Suscipit adipiscing bibendum est ultricies integer quis auctor. Amet massa vitae tortor condimentum lacinia. Sodales ut eu sem integer vitae justo. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Netus et malesuada fames ac turpis egestas maecenas. In vitae turpis massa sed elementum tempus egestas. Et netus et malesuada fames. Venenatis cras sed felis eget velit aliquet. Enim sed faucibus turpis in eu mi bibendum. Nunc sed velit dignissim sodales ut eu sem integer vitae.</h3>
-                <br>
-                <h3 class="text-xl text-gray-400 font-semibold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor. Arcu non sodales neque sodales ut. Sodales ut etiam sit amet nisl purus in mollis nunc. Erat velit scelerisque in dictum non consectetur a erat.
-                </h3>
+                <div v-for="(description, index) in project.longDescription" :key="index">
+                    <h3 class="text-xl text-gray-400 font-semibold">{{ description }}</h3>
+                    <br>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="text-gray-600 body-font" v-scrollanimation>
+    <section class="pt-12 text-gray-600 body-font" v-scrollanimation>
         <div class="container px-5 pb-24 mx-auto flex flex-wrap">
             <div class="flex flex-wrap md:-m-2 -m-1">
                 <div class="flex flex-wrap w-1/2">
@@ -78,7 +94,14 @@ export default {
   props: ['projectSlug'],
   data () {
     return {
-
+    }
+  },
+  computed: {
+    project () {
+    //   console.log(this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug))
+    //   console.log(this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0])
+    //   return this.$store.state.projects[0]
+      return this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0]
     }
   }
 }

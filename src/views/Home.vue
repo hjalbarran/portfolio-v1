@@ -132,22 +132,22 @@ export default {
         {
           id: 2,
           title: 'Cohen & Aguirre Lobby Solutions',
-          slug: 'Cohen&Aguirre',
-          shortRole: 'Vue JS Frontend Web Developer / DevOps',
+          slug: 'cohen&aguirre',
+          shortRole: 'Vue JS Developer, Laravel & DevOps',
           year: '2019-current'
         },
         {
           id: 3,
           title: 'Offyrus',
-          slug: 'Offyrus',
+          slug: 'offyrus',
           shortRole: 'Ecommerce & Graphic Designer',
           year: '2017-2021'
         },
         {
           id: 4,
           title: 'Ven Da Tu Mano - ONG',
-          slug: 'VenDaTuMano',
-          shortRole: 'Wordpress Website Design',
+          slug: 'vendatumano',
+          shortRole: 'Wordpress Website Designer',
           year: '2021'
         },
         {
