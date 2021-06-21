@@ -36,7 +36,7 @@
                     <h5 class="tracking-widest text-gray-600 mb-1">WEB PAGE</h5>
                     <ul class="list-none font-semibold">
                         <li>
-                            <a :href="`https://${project.webpage}`" target="_blank">{{ project.webpage }}</a>
+                            <a :href="project.url" target="_blank">{{ project.webpage }}</a>
                         </li>
                     </ul>
                 </div>

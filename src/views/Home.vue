@@ -153,22 +153,15 @@ export default {
         {
           id: 5,
           title: 'Ultratech',
-          slug: 'Ultratech',
+          slug: 'ultratech',
           shortRole: 'Wordpress Website Design',
           year: '2020-2021'
         },
         {
           id: 6,
           title: 'SJT Language',
-          slug: 'SJTLanguage',
+          slug: 'sjtlanguage',
           shortRole: 'Wordpress Website Design',
-          year: '2018'
-        },
-        {
-          id: 7,
-          title: 'EC Global US',
-          slug: 'ECGlobalUS',
-          shortRole: 'Wordpress Developer',
           year: '2018'
         }
       ]

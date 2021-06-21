@@ -11,6 +11,7 @@ export default createStore({
         myRole: ['Website Designer', 'VueJS developer'],
         client: 'Myself - Venezuela',
         webpage: 'www.humberto-albarran.com',
+        url: 'https://humberto-albarran.com',
         technologies: ['VueJS 3x', 'HTML5 - CSS3 - JS', 'Tailwind CSS', 'Vue Router - Vuex', 'Laragon'],
         longDescription: [
           'Having my own portfolio was one of my personal debts as a website developer. Nowdays having a showcase or portfolio is highly important because is a way you can actually show your works to others. The idea of having a portfolio started several years ago, at first, I decided to built it with Wordpress, but the more I got used to work with frontend technologies, I simply chose that using Vue JS to take the step forward is a better solution, because I can simply do whatever I want in terms of structure, animations, and how the navigation show be done.', 
@@ -26,6 +27,7 @@ export default createStore({
         year: '2019-current',
         myRole: ['VueJS Frontend Developer', 'Laravel Backend apprentice', 'DevOps / Cloud Server Manager'],
         webpage: 'www.videoportaldenegocios.es',
+        url: 'https://videoportaldenegocios.es',
         client: 'Cohen & Aguirre Lobby Solutions - Spain',
         technologies: ['VueJS 2.6x & Laravel 8', 'HTML5 - CSS3 - JS - PHP - MySQL', 'Vuesax & Tailwind CSS', 'Vue Router - Vuex - Axios', 'Linux Ubuntu 20.04', 'Visual Studio Code', 'Laragon'],
         longDescription: [
@@ -43,6 +45,7 @@ export default createStore({
         year: '2017-2021',
         myRole: ['Prestashop Developer Remote', 'Branding - Graphic Designer', 'MS Access DB manager'],
         webpage: 'www.offyrus.com',
+        url: 'https://offyrus.com',
         client: 'Offyrus - Spain',
         technologies: ['Prestashop / Woocommerce', 'XAMPP & Windows Server 2016', 'HTML5 - CSS3 - PHP - MySQL', 'Microsoft Access', 'Adobe After Effects', 'Adobe Illustrator', 'Adobe Photoshop'],
         longDescription: [
@@ -60,6 +63,7 @@ export default createStore({
         year: '2021',
         myRole: ['Wordpress Developer Remote'],
         webpage: 'www.vendatumano.es',
+        url: 'https://vendatumano.es',
         client: 'Ven Da Tu Mano ONG - Spain',
         technologies: ['Wordpress', 'Stripe & Paypal', 'Laragon', 'HTML5 - CSS3 - PHP', 'Adobe Illustrator'],
         longDescription: [
@@ -68,8 +72,40 @@ export default createStore({
           'After getting the template and the graphic and text resources to begin the job, I thought... this is one of the projects that seems to be done fast and easy, but I couldn\'t have been more worng. The problem was how the template works. Editing with the elementor plugin the pages was not the issue, it was all the predefined css styles and scripts that run in the template by default. I had to edit a lot of the original code of the template in order to achieve quite easy tasks as how the NavBar and footer behaves accordingly when the screen size changes (testing responsiveness of the design) but it seemed to not obeying elementor... At the end, I got the site running good, but I had really hard work "twisting" the template files.',
           'Moreover the webpage design was changed after the project was almost complete, so, that had a significant impact on the time the webpage was finally released.'
         ]  
+      },
+      {
+        title: 'Ultratech Inc.',
+        slug: 'ultratech',
+        shortRole: 'Wordpress Website Developer',
+        year: '2020-2021',
+        myRole: ['Wordpress Developer Remote'],
+        webpage: 'www.vendatumano.es',
+        url: 'https://ultratech-inc.com/',
+        client: 'Ultratech Inc C.A. - Panama',
+        technologies: ['Wordpress', 'Laragon', 'HTML5 - CSS3 - PHP'],
+        longDescription: [
+          'I got this project from a friend of mine, Arturo Agüero. He needed to develop a wordpress site as quick as possible and for that he had no time, so I took the challente to carry out the project rapidly. As with any project, the first thing to do is to know the exact requirements of the project, as well as the information to be displayed. So that\'s what I did. The company already had a webpage but they wanted to enhance the "look & feel" of the site, so the told to wait for new information about the services and solutions the provide.',
+          'The information arrived several weeks later, and after that for me the project started. The major issue developing the site was the "in-built" contact form function of the template, after some time struggling with PHP code, I decided to use Contact Form 7 plugin to achieve the same result.',
+          'The site was first deployed on a shared hosting, but after several issues regarding to the server itself and the emails, we decided to migrate the project to an instance of Wordpress inside of an AWS S3 server. I develop the wordpress site in a Win 10 laptop and Laragon as my development environment.'
+        ]  
+      },
+      {
+        title: 'SJT Language',
+        slug: 'sjtlanguage',
+        shortRole: 'Wordpress Website Developer',
+        year: '2018',
+        myRole: ['Wordpress Developer Remote'],
+        webpage: 'www.sjtlanguage.com',
+        url: 'http://www.sjtlanguage.com/',
+        client: 'Protos Technology C.A. - Panama',
+        technologies: ['Wordpress', 'XAMPP', 'HTML5 - CSS3 - PHP'],
+        longDescription: [
+          'This was one of those projects when as a developer you don\'t have any guideline to follow, nor any website sample. I felt like when as a Kid the teacher told you to draw whatever you like in a blank paper, kind of weird but kind of fun also.',
+          'In this case I spent a lot of time searching the correct template to begin work with, so to do that, I navigate through a lot of sites to get some good ideas. After I had some pre-selected design ideas, I showed it to my client, and after some talk, we decided to shown to the customers just a landing page, the content also was created by me, and of course translatable to spanish and french, because the business of the client are translation services.',
+          'I developed this site in my old Win 7 Laptop upgraded to Win 10 at the time of this job, I used as a development environment XAMPP. The deploy was on a simple shared hosting provided by the client.',
+          'I liked a lot this project because at the beginning the client had no idea of what to pursue, and at the end the project achieve exactly was the were looking for. Sometimes clients needs more than just a pretty landing page, they need to organize their ideas, structure the content, and I felt very well that I helped the client not just doing what I love in terms of web developing, but also in organizational terms.'
+        ]  
       }
-
     ]
   },
   mutations: {},
