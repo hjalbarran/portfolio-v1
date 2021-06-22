@@ -2,7 +2,7 @@
 <div>
     <section class="text-gray-600 body-font relative">
         <div class="absolute inset-0 bg-gray-300 right-0 md:right-64 first-animation">
-            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37325.19444855875!2d-66.9134410132135!3d10.474806114925432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1624318369831!5m2!1ses-419!2sve" style="filter: grayscale(1) contrast(1.2) opacity(0.65);"></iframe>
         </div>
         <div class="container px-5 py-24 mx-auto flex md:visible invisible first-animation">
             <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-1 shadow-md text-center">
@@ -22,11 +22,11 @@
                     </h1>
                 </div>
                 <div class="mb-8 fourth-animation">
-                    <h5 class="tracking-widest text-gray-600 mb-1">MY ROLE</h5>
+                    <h5 class="tracking-widest text-gray-600 mb-1">CONTACT INFO</h5>
                     <ul class="list-none font-semibold">
-                        <li>Brand Designer</li>
-                        <li>Website Builder</li>
-                        <li>Graphic Design Assesment</li>
+                        <li>+58 4126102861</li>
+                        <li>hjalbarran@gmail.com</li>
+                        <li>https://github.com/hjalbarran</li>
                     </ul>
                 </div>
                 <span class="inline-flex">
