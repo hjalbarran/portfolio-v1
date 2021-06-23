@@ -56,27 +56,30 @@
             <div class="lg:w-8/12 md:w-7/12 sm:w-6/12 sm:text-center lg:text-justify px-4">
                 <h3 class="text-xl text-gray-400 font-semibold second-animation">Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</h3>
                 <div class="container mx-auto pt-2">
-                    <form class="contact-form flex flex-wrap -m-2 third-animation" @submit.prevent="sendEmail">
+                    <Form class="contact-form flex flex-wrap -m-2 third-animation" @submit="sendEmail">
                         <fieldset class="container flex">
                             <legend class="hidden">Name and email</legend>
                             <div class="p-2 w-1/2">
                                 <label class="leading-7 text-sm text-gray-600">Name</label>
-                                <input type="text" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                                <Field type="text" name="name" :rules="isRequired" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required/>
+                                <ErrorMessage class="text-red-500" name="name" />
                             </div>
                             <div class="p-2 w-1/2">
                                 <label class="leading-7 text-sm text-gray-600">Email</label>
-                                <input type="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                                <Field type="email" name="email" :rules="validateEmail" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                <ErrorMessage class="text-red-500" name="email" />
                             </div>
                         </fieldset>
                         <fieldset class="container flex">
                             <legend class="hidden">Message</legend>
                             <div class="p-2 w-full">
                                 <label class="leading-7 text-sm text-gray-600">Message</label>
-                                <textarea name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+                                <Field type="text" name="message" :rules="isRequired" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
+                                <ErrorMessage class="text-red-500" name="message" />
                             </div>
                         </fieldset>
                         <input type="submit" value="Send" class="flex mx-auto px-8 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 md:py-4 md:text-lg md:px-10 hover:bg-gray-700 cursor-pointer">
-                    </form>
+                    </Form>
                 </div>
             </div>
         </div>
@@ -86,7 +89,13 @@
 
 <script>
 import emailjs from 'emailjs-com'
+import { Field, Form, ErrorMessage  } from 'vee-validate'
 export default {
+  components: {
+    Field,
+    Form,
+    ErrorMessage 
+  },
   data () {
     return {
       name: null,
@@ -95,6 +104,25 @@ export default {
     }
   },
   methods: {
+    // Validator function
+    isRequired (value) {
+      return value ? true : 'This field is required'
+    },
+    sendEmailTest (values) {
+      alert(JSON.stringify(values, null, 2))
+    },
+    validateEmail (value) {
+      // if the field is empty
+      if (!value) {
+        return 'This field is required'
+      }
+      // if the field is not a valid email
+      if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+        return 'This field must be a valid email'
+      }
+      // All is good
+      return true
+    },
     sendEmail: () => {
       emailjs.sendForm('service_bbxwl7k', 'template_9pgeflp', '.contact-form', 'user_swYdziZ2vuZ4jvZHBYsl1')
         .then((result) => {
