@@ -60,22 +60,22 @@
                         <fieldset class="container flex">
                             <legend class="text-transparent leading-none text-xs pl-2">Name and email</legend>
                             <div class="p-2 w-1/2">
-                                <label class="leading-7 text-sm text-gray-600">Name</label>
-                                <Field type="text" name="name" :rules="isRequired" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required/>
-                                <ErrorMessage class="text-red-500" name="name" />
+                                <label for="1" class="leading-7 text-sm text-gray-600" id="name">Name</label>
+                                <Field type="text" name="name" id="1" :rules="isRequired" aria-describedby="name" :aria-invalid="isRequired ? true : null" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" aria-required/>
+                                <ErrorMessage class="text-red-500" name="name" id="name" aria-live="assertive" />
                             </div>
                             <div class="p-2 w-1/2">
-                                <label class="leading-7 text-sm text-gray-600">Email</label>
-                                <Field type="email" name="email" :rules="validateEmail" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                                <ErrorMessage class="text-red-500" name="email" />
+                                <label for="2" class="leading-7 text-sm text-gray-600" id="email">Email</label>
+                                <Field type="email" name="email" id="2" :rules="validateEmail" aria-describedby="email" :aria-invalid="validateEmail ? true : null" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                <ErrorMessage class="text-red-500" name="email" id="email" aria-live="assertive" />
                             </div>
                         </fieldset>
                         <fieldset class="container flex">
                             <legend class="text-transparent leading-none text-xs pl-2">Message</legend>
                             <div class="p-2 w-full">
-                                <label class="leading-7 text-sm text-gray-600">Message</label>
-                                <Field type="text" name="message" :rules="isRequired" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
-                                <ErrorMessage class="text-red-500" name="message" />
+                                <label for="3" class="leading-7 text-sm text-gray-600" id="message">Message</label>
+                                <Field type="text" name="message" id="3" :rules="isRequired" aria-describedby="message" :aria-invalid="isRequired ? true : null" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
+                                <ErrorMessage class="text-red-500" name="message" id="message" aria-live="assertive" />
                             </div>
                         </fieldset>
                         <input type="submit" value="Send" class="flex mx-auto px-8 py-2 my-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 md:py-4 md:text-lg md:px-10 hover:bg-gray-700 cursor-pointer">
@@ -90,6 +90,8 @@
 <script>
 import emailjs from 'emailjs-com'
 import { Field, Form, ErrorMessage  } from 'vee-validate'
+
+
 export default {
   components: {
     Field,
