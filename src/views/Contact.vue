@@ -54,11 +54,11 @@
                 </span>
             </div>
             <div class="lg:w-8/12 md:w-7/12 sm:w-6/12 sm:text-center lg:text-justify px-4">
-                <h3 class="text-xl text-gray-400 font-semibold second-animation">Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</h3>
+                <h3 class="text-xl text-gray-400 font-semibold second-animation">Got a project? Drop me a message. I am always excited to join and develop new projects.</h3>
                 <div class="container mx-auto pt-2">
                     <Form class="contact-form flex flex-wrap -m-2 third-animation" @submit="sendEmail">
                         <fieldset class="container flex">
-                            <legend class="hidden">Name and email</legend>
+                            <legend class="text-transparent leading-none text-xs pl-2">Name and email</legend>
                             <div class="p-2 w-1/2">
                                 <label class="leading-7 text-sm text-gray-600">Name</label>
                                 <Field type="text" name="name" :rules="isRequired" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required/>
@@ -71,14 +71,14 @@
                             </div>
                         </fieldset>
                         <fieldset class="container flex">
-                            <legend class="hidden">Message</legend>
+                            <legend class="text-transparent leading-none text-xs pl-2">Message</legend>
                             <div class="p-2 w-full">
                                 <label class="leading-7 text-sm text-gray-600">Message</label>
                                 <Field type="text" name="message" :rules="isRequired" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
                                 <ErrorMessage class="text-red-500" name="message" />
                             </div>
                         </fieldset>
-                        <input type="submit" value="Send" class="flex mx-auto px-8 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 md:py-4 md:text-lg md:px-10 hover:bg-gray-700 cursor-pointer">
+                        <input type="submit" value="Send" class="flex mx-auto px-8 py-2 my-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 md:py-4 md:text-lg md:px-10 hover:bg-gray-700 cursor-pointer">
                     </Form>
                 </div>
             </div>
