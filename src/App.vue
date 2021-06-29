@@ -2,9 +2,17 @@
   <div>
     <transition name="fade" appear>
       <nav class="flex justify-between nav-background left-0 right-0 fixed top-0 z-10">
-        <figure class="mt-4 ml-8 mb-4">
-          <img :src="require('@/assets/images/logo-empty.png')" alt="" class="w-14">
-        </figure>
+        <div>
+          <figure class="flex flex-wrap mt-4 ml-6 mb-4 w-auto">
+            <img :src="require('@/assets/images/logo1.png')" alt="" class="w-14">
+            <transition name="fadeout">
+              <div v-if="nameAppear" class="borderedDiv ml-3">
+                <h5 class="tracking-normal font-bold text-xl ml-2">Humberto</h5>
+                <h5 class="tracking-normal font-bold text-xl ml-2">Albarrán</h5>
+              </div>
+            </transition>    
+          </figure>
+        </div>
         <button class="mt-4 mr-8 mb-4 tracking-wider text-base text-black font-bold" @click="openNav()">MENU</button>
       </nav>
     </transition>
@@ -60,10 +68,18 @@ export default {
   data () {
     return {
       isActive: false,
-      show: false
+      show: false,
+      nameAppear: true
     }
   },
+  mounted () {
+    document.addEventListener('scroll', this.menuNameAppear)
+  },
   methods: {
+    menuNameAppear () {
+      this.nameAppear = false
+      document.removeEventListener('scroll', this.menuNameAppear)
+    },
     openNav () {
       this.show = !this.show
       document.getElementById('myNav').style.height = '100%'
@@ -77,8 +93,12 @@ export default {
 </script>
 
 <style>
+.borderedDiv {
+  border-left: 2px solid #000!important;
+}
+
 .nav-background {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
 }
 
 .close-button:hover {
@@ -132,6 +152,29 @@ export default {
 }
 .fade-leave-active {
   transition: opacity 0.3s ease-out;
+}
+
+/* MENU WORDS */
+.fadeout-enter-active,
+.fadeout-leave-active {
+  transition: opacity 0.5s ease;
+  transition-delay: .1s;
+}
+
+.fadeout-enter-from,
+.fadeout-leave-to {
+  opacity: 0;
+}
+
+.before-leave {
+  opacity: 1;
+  transform: translateY(30px);
+  transition: all .4s linear;
+}
+
+.leave {
+  opacity: 0;
+  transform: translateY(0px);
 }
 
 /* 1st item */

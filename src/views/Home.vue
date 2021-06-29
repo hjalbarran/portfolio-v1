@@ -1,13 +1,9 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div>
     <div class="relative">
       <div class="max-w-7xl mx-auto">
         <div class="pb-8 pt-12 sm:py-16 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <!-- <svg class="hidden lg:block absolute left-auto inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg> -->
-          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-10 md:px-10 xl:mt-28">
             <div class="sm:text-center lg:text-left">
               <h5 class="tracking-widest text-gray-600 mb-4 first-animation">HUMBERTO ALBARRÁN</h5>
               <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl second-animation">
@@ -50,42 +46,8 @@
         </div>
     </div> -->
 
-
-    <!-- <section class="text-gray-600 body-font">
-      <div id="fase-1" class="container px-5 py-24 mx-auto">
-        <div class="sm:text-center lg:text-left">
-          <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>
-            <span class="block xl:inline">Case studies</span>
-          </h1>
-        </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/2 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" :src="require('@/assets/images/projects/offyrus-project.jpg')">
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 fade-hover">
-                <h2 class="tracking-widest text-sm title-font font-medium text-gray-600 mb-1">WEB DESIGN & BRANDING</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Offyrus</h1>
-                <p class="leading-relaxed">Prestashop Ecommerce</p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/2 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/604x204">
-              <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 fade-hover">
-                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section class="text-gray-600 body-font">
-      <div id="fase-1" class="container px-5 pt-24 pb-0 mx-auto">
+      <div id="fase-1" class="container px-5 pt-24 pb-0 mx-auto  lg:px-10">
         <div class="sm:text-center lg:text-left">
           <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>

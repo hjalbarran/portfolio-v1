@@ -13,7 +13,7 @@
         </div>
     </section> 
     <section class="text-gray-800 body-font">
-        <div class="container flex flex-wrap px-5 pt-24 mx-auto">
+        <div class="container flex flex-wrap px-5 lg:px-10 pt-24 mx-auto">
             <div class="lg:w-4/12 md:w-5/12 sm:w-6/12 sm:text-center lg:text-left">
                 <div class="mb-12">
                     <h5 class="tracking-widest text-gray-600 mb-4 second-animation">CONTACT</h5>

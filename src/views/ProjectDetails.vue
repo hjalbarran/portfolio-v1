@@ -3,7 +3,7 @@
     <h1>Este es project: {{ projectSlug }}</h1>
 
     <section class="text-gray-800 body-font">
-        <div class="container flex flex-wrap px-5 pt-24 mx-auto">
+        <div class="container flex flex-wrap px-5 lg:px-10 pt-24 mx-auto">
             <div class="lg:w-4/12 md:w-5/12 sm:w-6/12 sm:text-center lg:text-left">
                 <div class="mb-8">
                     <h5 class="tracking-widest text-gray-600 mb-2 first-animation">PROJECT CASE</h5>
@@ -59,7 +59,7 @@
     </section>
 
     <section class="pt-12 text-gray-600 body-font" v-scrollanimation>
-        <div class="container px-5 pb-24 mx-auto flex flex-wrap">
+        <div class="container px-5 lg:px-10 pb-24 mx-auto flex flex-wrap">
             <div class="flex flex-wrap md:-m-2 -m-1">
                 <div class="flex flex-wrap w-1/2">
                     <div class="md:p-2 p-1 w-1/2">
