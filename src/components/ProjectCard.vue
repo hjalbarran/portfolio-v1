@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 mx-auto bg-white border rounded-lg shadow-xl lg:w-1/2 cursor-pointer" @click="projectDetailsURL(project)">
+  <div class="p-6 m-2 mx-auto bg-white border rounded-lg shadow-xl lg:w-5/12 max-w-xl cursor-pointer" @click="projectDetailsURL(project)">
     <div class="flex flex-col items-start py-2 rounded-lg sm:flex-row">
       <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
         <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">

@@ -21,7 +21,7 @@ export default createStore({
         ]
       },
       {
-        title: 'Cohen & Aguirre Lobby Solutions',
+        title: 'Cohen & Aguirre',
         slug: 'cohen&aguirre',
         shortRole: 'Vue JS Developer, Laravel & DevOps',
         year: '2019-current',

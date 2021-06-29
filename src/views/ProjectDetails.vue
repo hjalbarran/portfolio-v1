@@ -98,9 +98,6 @@ export default {
   },
   computed: {
     project () {
-    //   console.log(this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug))
-    //   console.log(this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0])
-    //   return this.$store.state.projects[0]
       return this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0]
     }
   }

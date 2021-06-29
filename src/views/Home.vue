@@ -47,23 +47,23 @@
     </div> -->
 
     <section class="text-gray-600 body-font">
-      <div id="fase-1" class="container px-5 pt-24 pb-0 mx-auto  lg:px-10">
+      <div id="fase-1" class="container px-5 pt-24 pb-12 mx-auto lg:px-10">
         <div class="sm:text-center lg:text-left">
           <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-32" v-scrollanimation>
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl" v-scrollanimation>
             <span class="block xl:inline">Case studies</span>
           </h1>
         </div>
       </div>
-      <div class="container items-center px-5 py-8 mx-auto lg:px-0">
-        <div class="flex flex-wrap -m-4">
+      <div class="container items-center px-5 lg:px-10 py-2 mx-auto lg:px-0">
+        <div class="flex flex-wrap">
           <project-card v-for="project in projects" :key="project.id" :project="project"/>
         </div>
       </div>
     </section>
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-12 mx-auto">
         <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
           <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900" v-scrollanimation>Got a project? Drop me a message!</h1>
           <!-- <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Contact</button> -->
@@ -86,50 +86,11 @@ export default {
   },
   data () {
     return {
-      projects: [
-        {
-          id: 1,
-          title: 'Portfolio',
-          slug: 'portfolio',
-          shortRole: 'Vue JS Website Developer',
-          year: '2021'
-        },
-        {
-          id: 2,
-          title: 'Cohen & Aguirre Lobby Solutions',
-          slug: 'cohen&aguirre',
-          shortRole: 'Vue JS Developer, Laravel & DevOps',
-          year: '2019-current'
-        },
-        {
-          id: 3,
-          title: 'Offyrus',
-          slug: 'offyrus',
-          shortRole: 'Ecommerce & Graphic Designer',
-          year: '2017-2021'
-        },
-        {
-          id: 4,
-          title: 'Ven Da Tu Mano - ONG',
-          slug: 'vendatumano',
-          shortRole: 'Wordpress Website Designer',
-          year: '2021'
-        },
-        {
-          id: 5,
-          title: 'Ultratech',
-          slug: 'ultratech',
-          shortRole: 'Wordpress Website Design',
-          year: '2020-2021'
-        },
-        {
-          id: 6,
-          title: 'SJT Language',
-          slug: 'sjtlanguage',
-          shortRole: 'Wordpress Website Design',
-          year: '2018'
-        }
-      ]
+    }
+  },
+  computed: {
+    projects () {
+      return this.$store.state.projects
     }
   }
 

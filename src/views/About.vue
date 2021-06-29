@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="text-gray-600 body-font">
-      <div class="container px-5 lg:px-10 pt-24 pb-24 mx-auto">
+      <div class="container px-5 lg:px-10 pt-24 pb-12 mx-auto">
         <div class="flex flex-col text-center w-full mb-0">
           <h5 class="tracking-widest text-gray-600 mb-2 first-animation">ABOUT ME</h5>
           <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-8 second-animation">I'm Humberto Albarrán, materials engineer & web developer. Focused in develop solutions adapted to design & requirements while making solid friendly communication with my team coworkers.</h1>
@@ -12,7 +12,7 @@
       </div>
     </section>
 
-    <section class="text-gray-600 body-font">
+    <!-- <section class="text-gray-600 body-font">
       <div class="container px-5 lg:px-10 pb-4 mx-auto">
         <div class="flex flex-wrap w-full mb-4 fourth-animation">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -60,9 +60,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font fourth-animation">
       <div class="container px-5 lg:px-10 pt-4 mx-auto pb-24">
         <div class="flex flex-wrap -mx-4 -mb-10 text-center">
           <div class="sm:w-1/2 mb-10 px-4" v-scrollanimation>
@@ -86,9 +86,9 @@
               Visual Studio Code<em class="text-gray-400"> / </em>
               Laragon<em class="text-gray-400"> / </em>
               XAMPP<em class="text-gray-400"> / </em>
-              A. Photoshop<em class="text-gray-400"> / </em>
-              A. Illustrator<em class="text-gray-400"> / </em>
-              A. After Effects
+              Photoshop<em class="text-gray-400"> / </em>
+              Illustrator<em class="text-gray-400"> / </em>
+              After Effects
             </h3>
           </div>
         </div>
