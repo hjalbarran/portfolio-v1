@@ -8,6 +8,14 @@ export default createStore({
         slug: 'portfolio',
         shortRole: 'Vue JS Website Developer',
         img:require('@/assets/images/projects/project-humbertoportfolio1.jpg'),
+        imgs: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
         year: '2021',
         myRole: ['Website Designer', 'VueJS developer'],
         client: 'Myself - Venezuela',

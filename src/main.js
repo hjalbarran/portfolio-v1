@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './assets/tailwind.css'
 import ScrollAnimation from './directives/scrollanimation.js'
+// import VueEasyLightbox from 'vue-easy-lightbox'
 
 const Vue = require('vue')
 const VueScrollTo = require('vue-scrollto')
@@ -14,4 +15,5 @@ app.directive('scrollanimation', ScrollAnimation)
 app.use(store)
 app.use(router)
 app.use(VueScrollTo)
+// app.use(VueEasyLightbox)
 app.mount('#app')
