@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition name="fade" appear>
-      <nav class="flex justify-between nav-background left-0 right-0 fixed top-0 z-10">
+      <nav class="flex justify-between nav-background left-0 right-0 fixed top-0 z-10 backdrop-filter backdrop-blur-xs ">
         <div>
           <figure class="flex flex-wrap mt-4 ml-6 mb-4 w-auto">
             <img :src="require('@/assets/images/logo1.png')" alt="" class="w-14">
@@ -98,7 +98,7 @@ export default {
 }
 
 .nav-background {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .close-button:hover {

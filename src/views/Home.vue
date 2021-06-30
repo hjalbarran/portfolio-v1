@@ -1,26 +1,26 @@
 <template>
   <div>
     <div class="relative">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto">
         <div class="pb-8 pt-12 sm:py-16 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-10 md:px-10 xl:mt-28">
-            <div class="sm:text-center lg:text-left">
-              <h5 class="tracking-widest text-gray-600 mb-4 first-animation">HUMBERTO ALBARRÁN</h5>
+          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-11 md:px-10 xl:mt-28">
+            <div class="text-center lg:text-left">
+              <h5 class="tracking-widest text-gray-600 mb-4 md:mx-auto first-animation">HUMBERTO ALBARRÁN</h5>
               <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl second-animation">
                 <span class="block xl:inline">Frontend Web Developer</span>
                 {{ '  ' }}
                 <span class="block text-gray-600 xl:inline">Vue JS</span>
               </h1>
-              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 third-animation">
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg md:mx-auto md:mt-5 md:text-xl lg:mx-0 third-animation">
                 Tengo más de 7 años envuelto en la tecnología web, y he usado distintas plataformas y herramientas desde el comienzo. Actualmente me he enfocado en el desarrollo web frontend.
               </p>
-              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start fourth-animation">
-                <div class="rounded-md shadow">
+              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start flex justify-center fourth-animation">
+                <div class="rounded-md shadow sm:w-auto">
                   <a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 md:py-4 md:text-lg md:px-10 cursor-pointer" v-scroll-to="{ el: '#fase-1', offset: 0 }">
                     See Projects
                   </a>
                 </div>
-                <div class="mt-3 sm:mt-0 sm:ml-3">
+                <div class="ml-3 sm:mt-0 sm:ml-3 sm:w-auto w-auto">
                   <router-link to="/about" tag="a" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-gray-100 hover:bg-gray-200 md:py-4 md:text-lg md:px-10 cursor-pointer">
                     About me
                   </router-link>
@@ -30,10 +30,10 @@
           </main>
         </div>
       </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom md:w-1/2 md:mx-auto w-1/3 mx-auto">
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom md:w-1/2 md:mx-auto w-1/2 mx-auto">
         <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19.jpg')" alt="" /> -->
         <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19-2.png')" alt="" /> -->
-        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19-3.png')" alt="" />
+        <img class="h-56 w-full object-cover sm:h-full lg:w-full lg:h-full" :src="require('@/assets/images/19-3.png')" alt="" />
       </div>
     </div>
 
@@ -47,7 +47,7 @@
     </div> -->
 
     <section class="text-gray-600 body-font">
-      <div id="fase-1" class="container px-5 pt-24 pb-12 mx-auto lg:px-10">
+      <div id="fase-1" class="container px-5 pt-24 pb-12 mx-auto lg:px-11">
         <div class="sm:text-center lg:text-left">
           <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SELECTED PROJECTS</h5>
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl" v-scrollanimation>
@@ -55,7 +55,7 @@
           </h1>
         </div>
       </div>
-      <div class="container items-center px-5 lg:px-10 py-2 mx-auto lg:px-0">
+      <div class="container items-center px-5 lg:px-11 py-2 mx-auto lg:px-0">
         <div class="flex flex-wrap">
           <project-card v-for="project in projects" :key="project.id" :project="project"/>
         </div>
