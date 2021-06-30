@@ -24,7 +24,7 @@
                 <div class="mb-8 fourth-animation">
                     <h5 class="tracking-widest text-gray-600 mb-1">CONTACT INFO</h5>
                     <ul class="list-none font-semibold">
-                        <li>+58 4126102861</li>
+                        <li class="tracking-wide">+58 4126102861</li>
                         <li>hjalbarran@gmail.com</li>
                         <li>https://github.com/hjalbarran</li>
                     </ul>
