@@ -6,7 +6,8 @@
           <h5 class="tracking-widest text-gray-600 mb-2 first-animation">ABOUT ME</h5>
           <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-8 second-animation">I'm Humberto Albarrán, materials engineer & web developer. Focused in develop solutions adapted to design & requirements while making solid friendly communication with my team coworkers.</h1>
           <h3 class="text-xl text-gray-400 font-semibold third-animation">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor. Arcu non sodales neque sodales ut. Sodales ut etiam sit amet nisl purus in mollis nunc. Erat velit scelerisque in dictum non consectetur a erat.
+              As a materials engineer, my main areas of expertise are non destructive testing of materials, manufacturing processes and industrial maintenance, but as a Web Developer I want to built everything from scratch. There is so much things you can do with the code, that is simply awesome! Probably, if I go back in time, I would change my carreer path to study software engineering.
+              I don't regret, just saying I would adjust my study preferences in order to keep my life goals aligned.
           </h3>
         </div>
       </div>
@@ -96,11 +97,11 @@
     <hr>
     <section class="text-gray-600 body-font" >
       <div class="container lg:px-11 px-5 pt-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-8" v-scrollanimation>
+        <div class="flex flex-col text-center w-full mb-8 pb-8" v-scrollanimation>
           <h5 class="tracking-widest text-gray-600 mb-2">MY EXPERIENCE</h5>
           <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-8">Over 7 years of Web Development Experience</h1>
           <h3 class="text-xl text-gray-400 font-semibold">
-              My first web insights date back to 2012 were I basically used only plain HTML & CSS for a web page development. Then, I met Joomla & Wordpress, and I began to build sites with them, in fact I decided to use Wordpress over Joomla because of the easy of use and the major quantity of resources, last in the area of CMS I got knowledge in Prestashop because a client require to build an ecommerce, so I learned it and I built the webpage. Since Sept 2019, I began the real journey of web developer learning VueJS and Laravel making a custom project for a company.
+              My first web insights date back to 2012 were I basically used only plain HTML & CSS for a web page development. Then, I met Joomla & Wordpress, and I began to build sites with them, in fact I decided to use Wordpress over Joomla because of the ease of use and the major quantity of resources, last in the area of CMS I got knowledge in Prestashop because a client required to build an ecommerce, so I learned it and I built the webpage. The real journey of web development began in 2018 when I met Laravel & VueJS. By mid 2019 a company hired me to built a CRM and a Business Platform, and since that VueJS is my main focus because i simply love it. The "ease" of learning, and the flexibility of this framewroks is just astonishing. 
           </h3>
         </div>
         <div class="pb-24" v-scrollanimation>

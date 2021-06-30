@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 m-2 mx-auto bg-white border rounded-lg shadow-md lg:w-5/12 max-w-xl cursor-pointer hovereffect" @click="projectDetailsURL(project)">
+  <div class="p-6 m-2 mx-auto bg-white border rounded-lg shadow-md lg:w-5/12 max-w-xl cursor-pointer hovereffect" @click="projectDetailsURL(project)" v-scrollanimation>
     <div class="flex flex-col items-start py-2 rounded-lg sm:flex-row">
       <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
         <img :src="project.img" :alt="project.title" class="rounded-lg">
@@ -41,5 +41,15 @@ export default {
     box-shadow: 0px 4px 25px 0px rgba(0,0,0,.25);
     transition: .35s;
   }
+}
+.before-enter {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .4s linear;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0px);
 }
 </style>
