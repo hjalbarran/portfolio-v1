@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Este es project: {{ projectSlug }}</h1>
+    <!-- <h1>Este es project: {{ projectSlug }}</h1> -->
 
     <section class="text-gray-800 body-font">
         <div class="container flex flex-wrap px-5 lg:px-11 pt-24 mx-auto">

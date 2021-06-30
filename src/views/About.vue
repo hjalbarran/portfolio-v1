@@ -13,56 +13,6 @@
       </div>
     </section>
 
-    <!-- <section class="text-gray-600 body-font">
-      <div class="container px-5 lg:px-10 pb-4 mx-auto">
-        <div class="flex flex-wrap w-full mb-4 fourth-animation">
-          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h5 class="tracking-widest text-gray-600 mb-2">TECH I USE</h5>
-            <div class="h-1 w-8 bg-black rounded"></div>
-          </div>
-          <p class="lg:w-1/2 w-full leading-relaxed text-xl text-gray-400 font-semibold">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-        </div>
-        <div class="flex flex-wrap -m-4" v-scrollanimation>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=Mariana" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=VueJS" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=MySQL" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=PHP" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=Bootstrap" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=Git" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=WP" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=HTML5" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=CSS3" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=Webpack" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=Sass" alt="content">
-          </div>
-          <div class="w-4/12 sm:w-4/12 md:w-3/12 lg:w-2/12 xl:w-1/12 p-4">
-            <img class="h-40 rounded w-full object-cover object-center mb-6 rounded-full" src="https://fakeimg.pl/70x70/?text=JS" alt="content">
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section class="text-gray-600 body-font fourth-animation">
       <div class="container px-5 lg:px-11 pt-4 mx-auto pb-24">
         <div class="flex flex-wrap -mx-4 -mb-10 text-center">
