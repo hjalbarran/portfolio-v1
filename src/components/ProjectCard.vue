@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 m-2 mx-auto bg-white border rounded-lg shadow-xl lg:w-5/12 max-w-xl cursor-pointer" @click="projectDetailsURL(project)">
+  <div class="p-6 m-2 mx-auto bg-white border rounded-lg shadow-md lg:w-5/12 max-w-xl cursor-pointer hovereffect" @click="projectDetailsURL(project)">
     <div class="flex flex-col items-start py-2 rounded-lg sm:flex-row">
       <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
         <img :src="project.img" :alt="project.title" class="rounded-lg">
@@ -28,9 +28,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .fade-hover:hover {
   transition:ease-out .3s;
   opacity: 1
+}
+.hovereffect {
+  transform: translateY(0px);
+  transition: .35s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 25px 0px rgba(0,0,0,.25);
+    transition: .35s;
+  }
 }
 </style>
