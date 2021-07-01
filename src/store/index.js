@@ -8,7 +8,7 @@ export default createStore({
         slug: 'portfolio',
         shortRole: 'Vue JS Website Developer',
         img:require('@/assets/images/projects/project-humbertoportfolio1.jpg'),
-        imgs: [
+        images: [
           'https://dummyimage.com/500x300',
           'https://dummyimage.com/501x301',
           'https://dummyimage.com/600x360',
@@ -34,6 +34,14 @@ export default createStore({
         slug: 'cohen&aguirre',
         shortRole: 'Vue JS Developer, Laravel & DevOps',
         img:require('@/assets/images/projects/project-cohenyaguirre1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
         year: '2019-current',
         myRole: ['VueJS Frontend Developer', 'Laravel Backend apprentice', 'DevOps / Cloud Server Manager'],
         webpage: 'www.videoportaldenegocios.es',
@@ -53,6 +61,14 @@ export default createStore({
         slug: 'offyrus',
         shortRole: 'Ecommerce Prestashop & Graphic Designer',
         img:require('@/assets/images/projects/project-offyrus1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
         year: '2017-2021',
         myRole: ['Prestashop Developer Remote', 'Branding - Graphic Designer', 'MS Access DB manager'],
         webpage: 'www.offyrus.com',
@@ -72,6 +88,14 @@ export default createStore({
         slug: 'vendatumano',
         shortRole: 'Wordpress Website Designer',
         img:require('@/assets/images/projects/project-vendatumano1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
         year: '2021',
         myRole: ['Wordpress Developer Remote'],
         webpage: 'www.vendatumano.es',
@@ -90,6 +114,14 @@ export default createStore({
         slug: 'ultratech',
         shortRole: 'Wordpress Website Developer',
         img:require('@/assets/images/projects/project-ultratech1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
         year: '2020-2021',
         myRole: ['Wordpress Developer Remote'],
         webpage: 'www.vendatumano.es',
@@ -107,6 +139,14 @@ export default createStore({
         slug: 'sjtlanguage',
         shortRole: 'Wordpress Website Developer',
         img:require('@/assets/images/projects/project-sjtlanguage1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
         year: '2018',
         myRole: ['Wordpress Developer Remote'],
         webpage: 'www.sjtlanguage.com',

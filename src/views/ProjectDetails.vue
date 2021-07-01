@@ -60,8 +60,8 @@
             <div class="container px-5 lg:px-10 pb-24 mx-auto flex flex-wrap">
                 <div class="flex flex-wrap md:-m-2 -m-1">
                     <div class="flex flex-wrap w-full">
-                        <div class="md:p-2 p-1 w-1/3" v-for="(image, index) in project.imgs" :key="index" @click="() => showGallery(index)">
-                            <img alt="gallery" class="w-full object-cover h-full object-center block" :src="image">
+                        <div class="md:p-2 p-1 w-1/3" v-for="(image, index) in project.images" :key="index" @click="() => showGallery(index)">
+                            <img alt="gallery" class="w-full object-cover h-full object-center block hovereffect" :src="image">
                         </div>
                     </div>
                 </div>
@@ -69,11 +69,9 @@
         </section>
 
         <vue-easy-lightbox
-        scrollDisabled
-        escDisabled
-        moveDisabled
+        
         :visible="visible"
-        :imgs="imgs"
+        :imgs="images"
         :index="index"
         @hide="handleHide"
         ></vue-easy-lightbox>
@@ -97,8 +95,8 @@ export default {
     project () {
       return this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0]
     },
-    imgs () {
-      return this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0].imgs
+    images () {
+      return this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0].images
     } 
   },
   methods: {
@@ -116,7 +114,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .before-enter {
   opacity: 0;
   transform: translateY(30px);
@@ -126,5 +124,15 @@ export default {
 .enter {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.hovereffect {
+  transform: translateY(0px);
+  transition: .35s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 25px 0px rgba(0,0,0,.25);
+    transition: .35s;
+  }
 }
 </style>

@@ -2,8 +2,10 @@
     <transition name="fade" appear>
       <nav class="flex justify-between nav-background left-0 right-0 fixed top-0 z-10 backdrop-filter backdrop-blur-xs ">
         <div>
-          <figure class="flex flex-wrap mt-4 ml-6 mb-4 w-auto">
-            <img :src="require('@/assets/images/logo1.png')" alt="" class="w-14">
+             <figure class="flex flex-wrap mt-4 ml-6 mb-4 w-auto">
+              <router-link to="/">
+                <img :src="require('@/assets/images/logo1.png')" alt="" class="w-14">
+              </router-link>
             <transition name="fadeout">
               <div v-if="nameAppear" class="borderedDiv ml-3">
                 <h5 class="tracking-normal font-bold text-xl ml-2">Humberto</h5>
@@ -11,6 +13,7 @@
               </div>
             </transition>    
           </figure>
+          
         </div>
         <button class="mt-4 mr-8 mb-4 tracking-wider text-base text-black font-bold" @click="openNav()">MENU</button>
       </nav>
