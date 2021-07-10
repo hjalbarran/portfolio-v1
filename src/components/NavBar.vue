@@ -21,7 +21,7 @@
 
     <div id="myNav" class="flex overlay bg-black bg-opacity-95">
         <button class="mt-8 mr-8 mb-4 absolute top-0 right-0 tracking-wider text-base text-gray-500 font-bold close-button" @click="closeNav()">CLOSE</button>
-        <div class="overlay-content relative text-center mt-10 w-auto mx-auto">
+        <div class="overlay-content relative text-center mt-0 w-auto mx-auto">
           <transition name="fade">
             <h5 class="tracking-widest text-gray-500 mb-3" v-if="show">MENU</h5>
           </transition>
@@ -40,6 +40,13 @@
             </router-link>
           </transition>
           <transition name="slide-fade3">
+            <router-link to="/team" @click="closeNav()" v-if="show">
+              <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
+                <span class="block xl:inline">Team</span>
+              </h1>
+            </router-link>
+          </transition>
+          <transition name="slide-fade4">
             <router-link to="/contact" @click="closeNav()" v-if="show">
               <h1 class="text-4xl tracking-tight font-bold sm:text-4xl md:text-5xl">
                 <span class="block xl:inline">Contact</span>
@@ -224,6 +231,26 @@ export default {
 }
 
 .slide-fade3-leave-to {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+/* 4th item */
+.slide-fade4-enter-active {
+  transition: all 0.3s ease-out;
+  transition-delay: .6s;
+}
+
+.slide-fade4-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade4-enter-from {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-fade4-leave-to {
   opacity: 0;
   transition: all 0.3s ease-out;
 }

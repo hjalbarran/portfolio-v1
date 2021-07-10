@@ -160,6 +160,41 @@ export default createStore({
           'I liked a lot this project because at the beginning the client had no idea of what to pursue, and at the end the project achieve exactly was the were looking for. Sometimes clients needs more than just a pretty landing page, they need to organize their ideas, structure the content, and I felt very well that I helped the client not just doing what I love in terms of web developing, but also in organizational terms.'
         ]  
       }
+    ],
+    team: [
+      {
+        name: 'Jackeline Albarrán',
+        occupation: 'Graphic Designer & Marketing Campaign Master',
+        description: 'A very creative, innovative and detail-oriented girl, who will spot the slightest mistake in your design. She is also my sister!',
+        img:require('@/assets/images/projects/project-humbertoportfolio1.jpg'),
+        url: {
+          instagram: 'https://www.instagram.com/hj_albarran/',
+          linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/',
+          github: 'https://github.com/hjalbarran'
+        }
+      },
+      {
+        name: 'Mariana Escalante',
+        occupation: 'Graphic Designer, Wordpress Dev & Marketing Strategist',
+        description: 'Advice from her offers balance to my designs, and even ideas on how to approach certain challenges. She is my beloved wife.',
+        img:require('@/assets/images/projects/project-humbertoportfolio1.jpg'),
+        url: {
+          instagram: 'https://www.instagram.com/hj_albarran/',
+          linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/',
+          github: 'https://github.com/hjalbarran'
+        }
+      },
+      {
+        name: 'Gustavo Escobar',
+        occupation: 'Programmer - Fullstack Master',
+        description: 'He is the type of person who never says no. In the beginning he used to laugh a lot at my code, now he gives me new perspectives on maintainable and scalable code.',
+        img:require('@/assets/images/projects/project-humbertoportfolio1.jpg'),
+        url: {
+          instagram: 'https://www.instagram.com/hj_albarran/',
+          linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/',
+          github: 'https://github.com/hjalbarran'
+        }
+      }
     ]
   },
   mutations: {},
