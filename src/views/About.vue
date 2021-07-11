@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-deprecated-slot-attribute */
 <template>
   <div>
     <section class="text-gray-600 body-font">
@@ -5,15 +6,24 @@
         <div class="flex flex-col text-center w-full mb-0">
           <h5 class="tracking-widest text-gray-600 mb-2 first-animation">ABOUT ME</h5>
           <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-8 second-animation">I'm Humberto Albarrán, materials engineer & web developer. Focused in develop solutions adapted to design & requirements while making solid friendly communication with my team coworkers.</h1>
-          <h3 class="text-xl text-gray-400 font-semibold third-animation">
-              As a materials engineer, my main areas of expertise are non destructive testing of materials, manufacturing processes and industrial maintenance, but as a Web Developer I want to built everything from scratch. There is so much things you can do with the code, that is simply awesome! Probably, if I go back in time, I would change my carreer path to study software engineering.
-              I don't regret, just saying I would adjust my study preferences in order to keep my life goals aligned.
-          </h3>
+          <div class="flex flex-wrap container third-animation">
+            <div class="w-full px-6 pb-8 lg:w-1/2 lg:pb-0">
+              <h3 class="text-xl lg:text-justify text-gray-400 font-semibold">
+                As a materials engineer, my main areas of expertise are non destructive testing of materials, manufacturing processes and industrial maintenance, but as a Web Developer I want to built everything from scratch. There is so much things you can do with the code, that is simply awesome! Probably, if I go back in time, I would change my carreer path to study software engineering.
+                I don't regret, just saying I would adjust my study preferences in order to keep my life goals aligned.
+              </h3>
+            </div>
+            <!-- <img alt="gallery" class="px-4 w-full lg:w-1/2 object-cover h-full object-center block hovereffect" src="https://dummyimage.com/500x300"> -->
+            <vueper-slides class="px-4 w-full lg:w-1/2" autoplay fade>
+              <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :duration="duration"/>
+            </vueper-slides>
+          </div> 
+          
         </div>
       </div>
     </section>
 
-    <section class="text-gray-600 body-font fourth-animation">
+    <section class="text-gray-600 body-font" v-scrollanimation>
       <div class="container px-5 lg:px-11 pt-4 mx-auto pb-24">
         <div class="flex flex-wrap -mx-4 -mb-10 text-center">
           <div class="sm:w-1/2 mb-10 px-4" v-scrollanimation>
@@ -92,10 +102,42 @@
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 export default {
+  components: {
+    VueperSlides, 
+    VueperSlide
+  },
   data () {
     return {
+      pauseOnHover: true,
+      autoPlaying: true,
+      duration: 3000,
+      slides: [
+        {
+          title: 'Slide #1',
+          content: 'Slide content.'
+        },
+        {
+          title: 'Slide #2',
+          content: 'Slide content.'
+        }
+      ],
+      images: [
+        'https://dummyimage.com/500x300',
+        'https://dummyimage.com/501x301',
+        'https://dummyimage.com/600x360',
+        'https://dummyimage.com/601x361',
+        'https://dummyimage.com/502x302',
+        'https://dummyimage.com/503x303'
+      ]
     }
+  },
+  computed: {
+    // images () {
+    //   return this.$store.state.projects.filter(item => item.slug === this.$route.params.projectSlug)[0].images
+    // } 
   }
 }
 </script>
