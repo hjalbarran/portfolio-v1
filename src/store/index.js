@@ -45,7 +45,7 @@ export default createStore({
         year: '2019-current',
         myRole: ['VueJS Frontend Developer', 'Laravel Backend apprentice', 'DevOps / Cloud Server Manager'],
         webpage: 'www.videoportaldenegocios.es',
-        url: 'https://videoportaldenegocios.es',
+        url: 'http://videoportaldenegocios.es',
         client: 'Cohen & Aguirre Lobby Solutions - Spain',
         technologies: ['VueJS 2.6x & Laravel 8', 'HTML5 - CSS3 - JS - PHP - MySQL', 'Vuesax & Tailwind CSS', 'Vue Router - Vuex - Axios', 'Linux Ubuntu 20.04', 'Visual Studio Code', 'Laragon'],
         longDescription: [
@@ -81,6 +81,32 @@ export default createStore({
           'Also, the owner wanted to connect the MySQL Prestashop Database with the DB of the supplier in Spain. To do that, I had to connect both databases inside MS Access using ODBC connectors, to automatically make procedures like updating the stock, etc.',
           'I developed the ecommerce using XAMPP. The deploy were on a shared Hosting enhanced for prestashop and the Database connections between supplier and my client in MS Access were performed in a Windows Server 2016.',
           'In terms of graphic design, I designed a lot of marketing campaings in Facebook & Instagram for the company, also, I\'ve created several videos of the store using Adobe After Effects. Some of the banners of the website were done in Adobe Illustrator and Adobe Photoshop.'
+        ]  
+      },
+      {
+        title: 'Sibarita & Co',
+        slug: 'sibaritandco',
+        shortRole: 'Wordpress Website Designer',
+        img:require('@/assets/images/projects/project-vendatumano1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
+        year: '2021',
+        myRole: ['Wordpress Developer Remote'],
+        webpage: 'www.vendatumano.es',
+        url: 'https://vendatumano.es',
+        client: 'Ven Da Tu Mano ONG - Spain',
+        technologies: ['Wordpress', 'Stripe & Paypal', 'Laragon', 'HTML5 - CSS3 - PHP', 'Adobe Illustrator'],
+        longDescription: [
+          'The aim of this project is about supporting the labour of many people outside and inside my Country trying to give happiness and wellness to a lot of venezuelans citizens that doesn\'t have access to health and lived very far from the cities.',
+          'At the very beginning that I were told about the project I got inmediately involved in, because somehow I feel I am helping giving to the organization a better way to engage with the public in order to get more donations from them.',
+          'After getting the template and the graphic and text resources to begin the job, I thought... this is one of the projects that seems to be done fast and easy, but I couldn\'t have been more worng. The problem was how the template works. Editing with the elementor plugin the pages was not the issue, it was all the predefined css styles and scripts that run in the template by default. I had to edit a lot of the original code of the template in order to achieve quite easy tasks as how the NavBar and footer behaves accordingly when the screen size changes (testing responsiveness of the design) but it seemed to not obeying elementor... At the end, I got the site running good, but I had really hard work "twisting" the template files.',
+          'Moreover the webpage design was changed after the project was almost complete, so, that had a significant impact on the time the webpage was finally released.'
         ]  
       },
       {

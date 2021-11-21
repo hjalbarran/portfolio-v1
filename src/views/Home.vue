@@ -1,9 +1,10 @@
 <template>
   <div>
     <div class="relative">
+      <img :src="require('@/assets/images/test.svg')" alt="humberto-albarran-developer" class="bg-title first-animation">
       <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto">
         <div class="pb-8 pt-12 sm:py-16 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-11 md:px-10 xl:mt-28">
+          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-11 md:px-10 2xl:mt-80">
             <div class="text-center lg:text-left">
               <h5 class="tracking-widest text-gray-600 mb-4 md:mx-auto first-animation">HUMBERTO ALBARRÁN</h5>
               <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl second-animation">
@@ -30,9 +31,7 @@
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom md:w-1/2 md:mx-auto w-1/2 mx-auto">
-        <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19.jpg')" alt="" /> -->
-        <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" :src="require('@/assets/images/19-2.png')" alt="" /> -->
-        <img class="h-56 w-full object-cover sm:h-full lg:w-full lg:h-full" :src="require('@/assets/images/19-3.png')" alt="" />
+        <img class="h-56 w-full object-cover sm:h-full lg:h-auto" :src="require('@/assets/images/19-3.png')" alt="" />
       </div>
     </div>
 
@@ -153,5 +152,33 @@ export default {
 .enter {
   opacity: 1;
   transform: translateY(0px);
+}
+
+@media (min-width: 1366px) {
+  .bg-title {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: auto;
+      top: calc(60px + 5%);
+      z-index: -9999;
+      padding: 0 40px;
+      -webkit-filter: drop-shadow(18px 18px 16px #f7f7f7);
+      filter: drop-shadow(18px 18px 16px #f7f7f7);
+  }
+}
+
+@media (max-width: 1366px) {
+  .bg-title {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: auto;
+      top: calc(60px + 5%);
+      z-index: -9999;
+      padding: 0 40px;
+      -webkit-filter: drop-shadow(18px 18px 16px #f7f7f7);
+      filter: drop-shadow(18px 18px 16px #f7f7f7);
+  }
 }
 </style>
