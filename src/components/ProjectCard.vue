@@ -2,7 +2,7 @@
   <div class="p-6 m-2 mx-auto bg-white border rounded-lg shadow-md lg:w-5/12 max-w-xl cursor-pointer hovereffect" @click="projectDetailsURL(project)" v-scrollanimation>
     <div class="flex flex-col items-start py-2 rounded-lg sm:flex-row">
       <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
-        <img :src="project.img" :alt="project.title" class="rounded-lg">
+        <img :src="project.img" :alt="project.title" class="">
       </div>
       <div class="flex flex-col w-full text-blueGray-500 lg:ml-4" >
         <h2 class="mt-4 mb-1 text-base font-semibold tracking-widest text-black uppercase lg:mt-0 title-font">{{ project.title }}</h2>

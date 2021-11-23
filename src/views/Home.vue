@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="relative">
-      <img :src="require('@/assets/images/test.svg')" alt="humberto-albarran-developer" class="bg-title first-animation">
+      <img :src="require('@/assets/images/developer-01.svg')" alt="humberto-albarran-developer" class="bg-title first-animation">
       <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto">
         <div class="pb-8 pt-12 sm:py-16 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-11 md:px-10 2xl:mt-80">
@@ -164,7 +164,7 @@ export default {
       z-index: -9999;
       padding: 0 40px;
       -webkit-filter: drop-shadow(18px 18px 16px #f7f7f7);
-      filter: drop-shadow(18px 18px 16px #f7f7f7);
+      filter: drop-shadow(18px 18px 16px #f1f1f1);
   }
 }
 

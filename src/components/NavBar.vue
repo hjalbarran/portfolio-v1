@@ -54,7 +54,7 @@
             </router-link>
           </transition>
           <transition name="fade">
-            <p class="tracking-tighter text-gray-500 mt-40" v-if="show">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Caracas, Venezuela.</p>
+            <p class="tracking-tighter text-gray-500 mt-40" v-if="show">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Madrid, Spain.</p>
           </transition>
         </div>
     </div>

@@ -24,7 +24,7 @@
                 <div class="mb-8 fourth-animation">
                     <h5 class="tracking-widest text-gray-600 mb-1">CONTACT INFO</h5>
                     <ul class="list-none font-semibold">
-                        <li class="tracking-wide">+58 4126102861</li>
+                        <li class="tracking-wide">+34 641467693</li>
                         <li>hjalbarran@gmail.com</li>
                         <li>https://github.com/hjalbarran</li>
                     </ul>
@@ -113,9 +113,9 @@ export default {
       message: null,
       url: {
         instagram: 'https://www.instagram.com/hj_albarran/',
-        linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/',
+        linkedin: 'https://www.linkedin.com/in/hjalbarran/',
         github: 'https://github.com/hjalbarran',
-        whatsapp: 'https://wa.me/584126102861'
+        whatsapp: 'https://wa.me/34641467693'
       }
     }
   },

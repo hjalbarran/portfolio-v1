@@ -30,8 +30,8 @@ export default createStore({
         ]
       },
       {
-        title: 'Cohen & Aguirre',
-        slug: 'cohen&aguirre',
+        title: 'Cohen & Aguirre - Videoportal',
+        slug: 'cohenyaguirre-videoportal',
         shortRole: 'Vue JS Developer, Laravel & DevOps',
         img:require('@/assets/images/projects/project-cohenyaguirre1.jpg'),
         images: [
@@ -46,6 +46,33 @@ export default createStore({
         myRole: ['VueJS Frontend Developer', 'Laravel Backend apprentice', 'DevOps / Cloud Server Manager'],
         webpage: 'www.videoportaldenegocios.es',
         url: 'http://videoportaldenegocios.es',
+        client: 'Cohen & Aguirre Lobby Solutions - Spain',
+        technologies: ['VueJS 2.6x & Laravel 8', 'HTML5 - CSS3 - JS - PHP - MySQL', 'Vuesax & Tailwind CSS', 'Vue Router - Vuex - Axios', 'Linux Ubuntu 20.04', 'Visual Studio Code', 'Laragon'],
+        longDescription: [
+          'This is currently the largest development project I have been working on. This challenge started in mid-July 2019 when I had a lot of talks about the specific requirements that the web application should meet, also the client allow me to chose the techonologies that were going to be used in the development process. To carry out the project I contacted and old friend that was already a programmer: Gustavo Escobar. After some conversations of the architecture and knowing that this was my very first proffesional coding challenge, we decided to do it with Laravel and VueJS.',
+          'The project was built on top of VueJS 2.6.x (developed by me) and Laravel v8 as the backend Framework (developed by Gustavo). To deploy as many features as possible, we decided to take advantage using Vuesax UI Components Framework and Tailwind CSS. It uses vue-router, vuex, and of course Axios to make API calls to the server.',
+          'In the Laravel side, this projects makes use of libraries like Tymon JWT to handled JWT authorization & authentication processes. Also uses Jeremy Kenedy to handle roles and gumlet for image resizings.',
+          'The deploy of new features is on a Cloud Server using Linux Ubuntu v20.04. I developed in a Windows 10, IDE Visual Studio Code, and Localhost is provided by Laragon.',
+          'I like a lot this project, because not only this is my first big challenge but it\'s very dynamic thanks to the organization\'s nature, were the project needs to deploy as many features as posible to maintain his market, and customers satisfied.'
+        ]  
+      },
+      {
+        title: 'Cohen & Aguirre - Intranet',
+        slug: 'cohenyaguirre-intranet',
+        shortRole: 'Vue JS Developer, Laravel & DevOps',
+        img:require('@/assets/images/projects/project-cohenyaguirre1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
+        year: '2021',
+        myRole: ['VueJS Frontend Developer', 'Laravel Backend apprentice', 'DevOps / Cloud Server Manager'],
+        webpage: 'www.cohenyaguirre.es/intranet',
+        url: 'http://cohenyaguirre.es/intranet',
         client: 'Cohen & Aguirre Lobby Solutions - Spain',
         technologies: ['VueJS 2.6x & Laravel 8', 'HTML5 - CSS3 - JS - PHP - MySQL', 'Vuesax & Tailwind CSS', 'Vue Router - Vuex - Axios', 'Linux Ubuntu 20.04', 'Visual Studio Code', 'Laragon'],
         longDescription: [
@@ -87,7 +114,7 @@ export default createStore({
         title: 'Sibarita & Co',
         slug: 'sibaritandco',
         shortRole: 'Wordpress Website Designer',
-        img:require('@/assets/images/projects/project-vendatumano1.jpg'),
+        img:require('@/assets/images/projects/project-sibaritandco1.jpg'),
         images: [
           'https://dummyimage.com/500x300',
           'https://dummyimage.com/501x301',
@@ -98,10 +125,36 @@ export default createStore({
         ],
         year: '2021',
         myRole: ['Wordpress Developer Remote'],
-        webpage: 'www.vendatumano.es',
-        url: 'https://vendatumano.es',
-        client: 'Ven Da Tu Mano ONG - Spain',
-        technologies: ['Wordpress', 'Stripe & Paypal', 'Laragon', 'HTML5 - CSS3 - PHP', 'Adobe Illustrator'],
+        webpage: 'www.sibaritandco.com',
+        url: 'https://sibaritandco.com',
+        client: 'Sibarita & Co - Spain',
+        technologies: ['Wordpress', 'Laragon', 'HTML5 - CSS3 - PHP', 'Adobe Illustrator'],
+        longDescription: [
+          'The aim of this project is about supporting the labour of many people outside and inside my Country trying to give happiness and wellness to a lot of venezuelans citizens that doesn\'t have access to health and lived very far from the cities.',
+          'At the very beginning that I were told about the project I got inmediately involved in, because somehow I feel I am helping giving to the organization a better way to engage with the public in order to get more donations from them.',
+          'After getting the template and the graphic and text resources to begin the job, I thought... this is one of the projects that seems to be done fast and easy, but I couldn\'t have been more worng. The problem was how the template works. Editing with the elementor plugin the pages was not the issue, it was all the predefined css styles and scripts that run in the template by default. I had to edit a lot of the original code of the template in order to achieve quite easy tasks as how the NavBar and footer behaves accordingly when the screen size changes (testing responsiveness of the design) but it seemed to not obeying elementor... At the end, I got the site running good, but I had really hard work "twisting" the template files.',
+          'Moreover the webpage design was changed after the project was almost complete, so, that had a significant impact on the time the webpage was finally released.'
+        ]  
+      },
+      {
+        title: 'Saporiti Fire',
+        slug: 'saporitifire',
+        shortRole: 'Wordpress Website Designer',
+        img:require('@/assets/images/projects/project-saporitifire1.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
+        year: '2021',
+        myRole: ['Wordpress Developer Remote'],
+        webpage: 'www.saporitifire.com',
+        url: 'https://saporitifire.com',
+        client: 'Saporiti Water Pump Services C.A. - Venezuela',
+        technologies: ['Wordpress', 'Laragon', 'HTML5 - CSS3 - PHP', 'Adobe Illustrator'],
         longDescription: [
           'The aim of this project is about supporting the labour of many people outside and inside my Country trying to give happiness and wellness to a lot of venezuelans citizens that doesn\'t have access to health and lived very far from the cities.',
           'At the very beginning that I were told about the project I got inmediately involved in, because somehow I feel I am helping giving to the organization a better way to engage with the public in order to get more donations from them.',

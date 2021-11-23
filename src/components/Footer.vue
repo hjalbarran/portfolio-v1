@@ -2,7 +2,7 @@
     <footer>
         <div class="w-full px-8 mt-4 rounded-b-lg bg-gray-200">
             <div class="container flex flex-col flex-wrap px-5 py-6 mx-auto sm:flex-row">
-                <p class="text-sm text-center text-gray-500 sm:text-left hover:text-black">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Caracas, Venezuela.</p>
+                <p class="text-sm text-center text-gray-500 sm:text-left hover:text-black">&copy; {{ new Date().getFullYear() }} Humberto Albarrán. Made with ♥ in Madrid, Spain.</p>
                 <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                     <!-- WHATSAPP -->
                     <a :href="url.whatsapp" target="_blank" title="WhatsApp" class="ml-3 text-gray-500 hover:text-black">
@@ -45,9 +45,9 @@ export default {
     return {
       url: {
         instagram: 'https://www.instagram.com/hj_albarran/',
-        linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/',
+        linkedin: 'https://www.linkedin.com/in/hjalbarran/',
         github: 'https://github.com/hjalbarran',
-        whatsapp: 'https://wa.me/584126102861'
+        whatsapp: 'https://wa.me/34641467693'
       }
     }
   }
