@@ -274,6 +274,47 @@ export default createStore({
           github: 'https://github.com/hjalbarran'
         }
       }
+    ],
+    testimonials: [
+      {
+        id: 1,
+        name: 'Mariana Escalante',
+        avatar:require('@/assets/images/projects/project-sibaritandco1.jpg'),
+        testimonial: 'Humberto ha hecho un trabajo espléndido. blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba',
+        company: 'Sibarita & Co',
+        jobRole: 'Marketing Director',
+        logoCompany:require('@/assets/images/projects/project-sibaritandco1.jpg'),
+        url: {
+          instagram: 'https://www.instagram.com/hj_albarran/',
+          linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/'
+        }
+      }, 
+      {
+        id: 2,
+        name: 'Mariana Escalante',
+        avatar:require('@/assets/images/projects/project-sibaritandco1.jpg'),
+        testimonial: 'Humberto ha hecho un trabajo espléndido. blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba',
+        company: 'Sibarita & Co',
+        jobRole: 'Marketing Director',
+        logoCompany:require('@/assets/images/projects/project-sibaritandco1.jpg'),
+        url: {
+          instagram: 'https://www.instagram.com/hj_albarran/',
+          linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/'
+        }
+      }, 
+      {
+        id: 3,
+        name: 'Mariana Escalante',
+        avatar:require('@/assets/images/projects/project-sibaritandco1.jpg'),
+        testimonial: 'Humberto ha hecho un trabajo espléndido. blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba blablablaba',
+        company: 'Sibarita & Co',
+        jobRole: 'Marketing Director',
+        logoCompany:require('@/assets/images/projects/project-sibaritandco1.jpg'),
+        url: {
+          instagram: 'https://www.instagram.com/hj_albarran/',
+          linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/'
+        }
+      }
     ]
   },
   mutations: {},

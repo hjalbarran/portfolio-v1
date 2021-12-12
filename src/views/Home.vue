@@ -44,6 +44,53 @@
         </div>
     </div> -->
 
+    <!-- SWPIPER SLIDES DEMO -->
+    <section class="py-12 overflow-hidden md:py-20 lg:py-8">
+      <div id="fase-1" class="container px-5 pt-24 pb-12 mx-auto lg:px-11">
+        <div class="sm:text-center lg:text-left">
+          <h5 class="tracking-widest text-gray-600 mb-4" v-scrollanimation>SOME OPINIONS</h5>
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl" v-scrollanimation>
+            <span class="block xl:inline">Testimonials</span>
+          </h1>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- <testimonial-card v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial"/> -->
+
+    <!-- SWPIPER SLIDES DEMO -->
+    <!-- <section class="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative">
+          <img class="mx-auto h-8" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg" alt="Workcation" />
+          <blockquote class="mt-10">
+            <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
+              <p>
+                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
+              </p>
+            </div>
+            <footer class="mt-8">
+              <div class="md:flex md:items-center md:justify-center">
+                <div class="md:flex-shrink-0">
+                  <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                </div>
+                <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                  <div class="text-base font-medium text-gray-900">Judith Black</div>
+
+                  <svg class="hidden md:block mx-1 h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M11 0h3L9 20H6l5-20z" />
+                  </svg>
+
+                  <div class="text-base font-medium text-gray-500">CEO, Workcation</div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section> -->
+
     <section class="text-gray-600 body-font">
       <div id="fase-1" class="container px-5 pt-24 pb-12 mx-auto lg:px-11">
         <div class="sm:text-center lg:text-left">
@@ -76,11 +123,13 @@
 
 <script>
 import ProjectCard from '@/components/ProjectCard.vue'
+import TestimonialCard from '@/components/TestimonialCard.vue'
 
 
 export default {
   components: {
     ProjectCard
+    // TestimonialCard
   },
   data () {
     return {
@@ -89,13 +138,16 @@ export default {
   computed: {
     projects () {
       return this.$store.state.projects
+    }, 
+    testimonials () {
+      return this.$store.state.testimonials
     }
   }
 
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .z-index-custom {
   z-index: -1;
 }
@@ -179,6 +231,50 @@ export default {
       padding: 0 40px;
       -webkit-filter: drop-shadow(18px 18px 16px #f7f7f7);
       filter: drop-shadow(18px 18px 16px #f7f7f7);
+  }
+}
+
+//Carousel
+// .carousel__slide > .carousel__item {
+//   transform: scale(1);
+//   opacity: 0.5;
+//   transition: 0.5s;
+// }
+
+.carousel__item {
+  min-height: 200px;
+  width: 80%;
+  padding: 3rem 0 3rem 0;
+  background-color: #ffffff;
+  color:  var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__slide {
+  padding: 10px;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+}
+
+.fade-hover:hover {
+  transition:ease-out .3s;
+  opacity: 1
+}
+.hovereffect {
+  transform: translateY(0px);
+  transition: .35s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 25px 0px rgba(0,0,0,.25);
+    transition: .35s;
   }
 }
 </style>
