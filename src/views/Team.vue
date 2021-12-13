@@ -9,7 +9,7 @@
     <div class="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg third-animation">
       <div class="grid sm:grid-cols-3" v-for="(person, index) in team" :key="index">
         <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
-          <img class="absolute object-cover w-full h-full rounded" src="https://fakeimg.pl/300/" :alt="person.name" />
+          <img class="absolute object-cover w-full h-full rounded" :src="person.img" :alt="person.name" />
         </div>
         <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
           <p class="text-lg font-bold">{{person.name}}</p>

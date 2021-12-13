@@ -245,7 +245,7 @@ export default createStore({
         name: 'Jackeline Albarrán',
         occupation: 'Graphic Designer & Marketing Campaign Master',
         description: 'A very creative, innovative and detail-oriented girl, who will spot the slightest mistake in your design. She is also my sister!',
-        img:require('@/assets/images/projects/project-humbertoportfolio1.jpg'),
+        img:require('@/assets/images/jose-300x300.jpg'),
         url: {
           instagram: 'https://www.instagram.com/hj_albarran/',
           linkedin: 'https://www.linkedin.com/in/humberto-jose-albarran-ramirez/',

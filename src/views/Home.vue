@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-index-custom md:w-1/2 md:mx-auto w-1/2 mx-auto">
-        <img class="h-56 w-full object-cover sm:h-full lg:h-auto" :src="require('@/assets/images/19-3.png')" alt="" />
+        <img class="h-56 w-full object-cover sm:h-full lg:h-auto" :src="require('@/assets/images/19-3.png')" alt="Humberto Albarran developer frontend" />
       </div>
     </div>
 
