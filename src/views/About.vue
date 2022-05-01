@@ -59,15 +59,25 @@
       <div class="container lg:px-11 px-5 pt-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-8 pb-8" v-scrollanimation>
           <h5 class="tracking-widest text-gray-600 mb-2">MY EXPERIENCE</h5>
-          <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-8">Over 7 years of Web Development Experience</h1>
+          <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-8">Over 10 years of Web Development Experience</h1>
           <h3 class="text-xl text-gray-400 font-semibold">
               My first web insights date back to 2012 were I basically used only plain HTML & CSS for a web page development. Then, I met Joomla & Wordpress, and I began to build sites with them, in fact I decided to use Wordpress over Joomla because of the ease of use and the major quantity of resources, last in the area of CMS I got knowledge in Prestashop because a client required to build an ecommerce, so I learned it and I built the webpage. The real journey of web development began in 2018 when I met Laravel & VueJS. By mid 2019 a company hired me to built a CRM and a Business Platform, and since that VueJS is my main focus because i simply love it. The "ease" of learning, and the flexibility of this framewroks is just astonishing. 
           </h3>
         </div>
         <div class="pb-24" v-scrollanimation>
           <div id="line" class="flex flex-wrap mb-2">
+            <div class="w-full sm:w-1/3 text-base text-black font-medium">AlmacenLinea</div>
+            <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Fullstack Developer - Vue JS / Laravel</div>
+            <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">April 2022 - Present</div>
+          </div>
+          <div id="line" class="flex flex-wrap mb-2">
+            <div class="w-full sm:w-1/3 text-base text-black font-medium">Greelow LLC - Charity Project</div>
+            <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Fullstack Developer - Vue JS / Laravel</div>
+            <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">December 2021 - Present</div>
+          </div>
+          <div id="line" class="flex flex-wrap mb-2">
             <div class="w-full sm:w-1/3 text-base text-black font-medium">Cohen & Aguirre Lobby Solutions</div>
-            <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Frontend Developer - Vue JS / DevOps</div>
+            <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Frontend Developer - Vue JS and DevOps</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">September 2019 - Present</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
