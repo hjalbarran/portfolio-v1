@@ -2,7 +2,7 @@
   <div>
     <NavBar></NavBar>
 
-    <router-view v-slot="{ Component }">
+    <router-view v-slot="{ Component }" class="min-height-custom">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style>
+.min-height-custom {
+  min-height: 91.2vh
+}
 /* THIS ANIMATIONS APPLY FOR ALL PAGES */
 /** FIRST APPEAR ANIMATIONS */
 .first-animation {

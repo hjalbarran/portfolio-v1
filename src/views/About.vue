@@ -66,42 +66,42 @@
         </div>
         <div class="pb-24" v-scrollanimation>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">AlmacenLinea</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="ar" /> AlmacenLinea</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Fullstack Developer - Vue JS / Laravel</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">April 2022 - Present</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Greelow LLC - Charity Project</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="ar" /> Greelow LLC - Charity Project</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Fullstack Developer - Vue JS / Laravel</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">December 2021 - Present</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Cohen & Aguirre Lobby Solutions</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="es" /> Cohen & Aguirre Lobby Solutions</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Frontend Developer - Vue JS and DevOps</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">September 2019 - Present</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Offyrus</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="es" /> Offyrus</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Prestashop Developer / Graphic Designer</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">January 2017 - January 2021</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Protos Technology</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="pa" /> Protos Technology</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Remote Wordpress Developer / Web / Freelance</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">June 2017 - January 2021</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Universidad Simón Bolívar</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="ve" /> Universidad Simón Bolívar</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Academic Research / Professor / Web project</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">September 2015 - August 2019</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Kubesoluciones</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="ve" /> Kubesoluciones</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Wordpress Web Developer</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">April 2014 - November 2015</div>
           </div>
           <div id="line" class="flex flex-wrap mb-2">
-            <div class="w-full sm:w-1/3 text-base text-black font-medium">Grupo A&C VE</div>
+            <div class="w-full sm:w-1/3 text-base text-black font-medium"><flag iso="ve" /> Grupo A&C VE</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">Co-Founder / Web / Graphic Designer / Teacher</div>
             <div class="w-full sm:w-1/3 text-base text-gray-400 font-medium">January 2011 - Febreary 2015</div>
           </div>

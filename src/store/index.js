@@ -4,6 +4,58 @@ export default createStore({
   state: {
     projects: [
       {
+        title: 'AlmacenLinea',
+        slug: 'almacenlinea',
+        shortRole: 'Remote FullStack Dev - VueJS & Laravel',
+        img:require('@/assets/images/projects/almacenlinea-logo.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
+        year: '2022 - current',
+        myRole: ['VueJS Developer', 'Laravel Developer'],
+        client: 'AlmacenLinea (Argentina)',
+        webpage: 'https://www.almacenlinea.com/',
+        url: 'https://www.almacenlinea.com/',
+        technologies: ['VueJS 3x', 'Vuex', 'Tailwind 3x', 'Laragon', 'Laravel 8', 'Laravel JetStream', 'Inertia JS'],
+        longDescription: [
+          'Having my own portfolio was one of my personal debts as a website developer. Nowdays having a showcase or portfolio is highly important because is a way you can actually show your works to others. The idea of having a portfolio started several years ago, at first, I decided to built it with Wordpress, but the more I got used to work with frontend technologies, I simply chose that using Vue JS to take the step forward is a better solution, because I can simply do whatever I want in terms of structure, animations, and how the navigation show be done.', 
+          'After I chose to develop my site with VueJS, the other things I had to select, was the version of the frontend, and moreover how I wanted to display all the information to the visitors in the webpage. In order to get answers the first thing I did was going to the google search bar to look for "Portfolios and resumes websites design inspiration" then, I went to the Youtube searching for "Portfolios design inspiration" after I dedicated a lot of time getting some ideas, I decided for a mix of features based on my research.',
+          'The first thing I decided to have, is that I didn\'t want the conventional sticky navbar at the top of the page. I went on a off-canvas navigation by default, in order to keep the design as minimalist as possible. Just a simple Menu button, and a cool animation to show the pages of my website. I decided at the end, a curtain animation, and a group transition to animate the anchor links showed in the main menu. My second choice about the design was about the organization of the info of my projects and the organization of the structure of the "about me" page, after I had a single piece of paper handwritten of how I wanted my site, I had to decide technologies related to VueJS (version and packages).',
+          'Some choices are really simple, because are the default choice in almost every project as for example: Vue-router and Vuex. But deciding over to have a UI framework like Vuesax or BootstrapVue and to managed the styling by myself with the help of css frameworks as Tailwind CSS, the decision went in favor of managing the styles myself, because I need to create some custom animation for entrance and leaving objects in the viewport, and in that case I think that challenging myself with plain css and Tailwind CSS was a good choice and a way to improve my skills instead of simply getting components predefined by the UI frameworks. I developed my entire site on localhost with Laragon.'
+        ]
+      },
+      {
+        title: 'Greelow - Charity.live',
+        slug: 'greelow-charity',
+        shortRole: 'Remote FullStack Dev - VueJS & Laravel',
+        img:require('@/assets/images/projects/greelow-logo.jpg'),
+        images: [
+          'https://dummyimage.com/500x300',
+          'https://dummyimage.com/501x301',
+          'https://dummyimage.com/600x360',
+          'https://dummyimage.com/601x361',
+          'https://dummyimage.com/502x302',
+          'https://dummyimage.com/503x303'
+        ],
+        year: '2021 - current',
+        myRole: ['VueJS Developer', 'Laravel Developer'],
+        client: 'Greelow (Argentina) - Keren Hasviis (UK)',
+        webpage: 'https://greelow.com/',
+        url: 'https://greelow.com/',
+        technologies: ['VueJS 2x', 'Vuex', 'Vuetify', 'Laragon', 'Laravel 8'],
+        longDescription: [
+          'Having my own portfolio was one of my personal debts as a website developer. Nowdays having a showcase or portfolio is highly important because is a way you can actually show your works to others. The idea of having a portfolio started several years ago, at first, I decided to built it with Wordpress, but the more I got used to work with frontend technologies, I simply chose that using Vue JS to take the step forward is a better solution, because I can simply do whatever I want in terms of structure, animations, and how the navigation show be done.', 
+          'After I chose to develop my site with VueJS, the other things I had to select, was the version of the frontend, and moreover how I wanted to display all the information to the visitors in the webpage. In order to get answers the first thing I did was going to the google search bar to look for "Portfolios and resumes websites design inspiration" then, I went to the Youtube searching for "Portfolios design inspiration" after I dedicated a lot of time getting some ideas, I decided for a mix of features based on my research.',
+          'The first thing I decided to have, is that I didn\'t want the conventional sticky navbar at the top of the page. I went on a off-canvas navigation by default, in order to keep the design as minimalist as possible. Just a simple Menu button, and a cool animation to show the pages of my website. I decided at the end, a curtain animation, and a group transition to animate the anchor links showed in the main menu. My second choice about the design was about the organization of the info of my projects and the organization of the structure of the "about me" page, after I had a single piece of paper handwritten of how I wanted my site, I had to decide technologies related to VueJS (version and packages).',
+          'Some choices are really simple, because are the default choice in almost every project as for example: Vue-router and Vuex. But deciding over to have a UI framework like Vuesax or BootstrapVue and to managed the styling by myself with the help of css frameworks as Tailwind CSS, the decision went in favor of managing the styles myself, because I need to create some custom animation for entrance and leaving objects in the viewport, and in that case I think that challenging myself with plain css and Tailwind CSS was a good choice and a way to improve my skills instead of simply getting components predefined by the UI frameworks. I developed my entire site on localhost with Laragon.'
+        ]
+      },
+      {
         title: 'Portfolio',
         slug: 'portfolio',
         shortRole: 'Vue JS Website Developer',
