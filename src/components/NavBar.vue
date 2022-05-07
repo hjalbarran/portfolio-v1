@@ -15,12 +15,22 @@
           </figure>
           
         </div>
-        <button class="mt-4 mr-8 mb-4 tracking-wider text-base text-black font-bold" @click="openNav()">MENU</button>
+        <!-- <button class="mt-4 mr-8 mb-4 tracking-wider text-base text-black font-bold" @click="openNav()">MENU</button> -->
+        <button type="button" class="mt-4 mr-8 mb-4 hamburger" :class="{ 'active' : this.burgerActive}" @click="openNav()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </transition>
 
     <div id="myNav" class="flex overlay bg-black bg-opacity-95">
-        <button class="mt-8 mr-8 mb-4 absolute top-0 right-0 tracking-wider text-base text-gray-500 font-bold close-button" @click="closeNav()">CLOSE</button>
+        <!-- <button class="mt-8 mr-8 mb-4 absolute top-0 right-0 tracking-wider text-base text-gray-500 font-bold close-button" @click="closeNav()">CLOSE</button> -->
+        <button type="button" class="mt-4 mr-8 mb-4 absolute top-0 right-0 hamburger" :class="{ 'active' : this.burgerActive}" @click="closeNav()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
         <div class="overlay-content relative text-center mt-0 w-auto mx-auto">
           <transition name="fade">
             <h5 class="tracking-widest text-gray-500 mb-3" v-if="show">MENU</h5>
@@ -66,22 +76,29 @@ export default {
     return {
       isActive: false,
       show: false,
-      nameAppear: true
+      nameAppear: true,
+      burgerActive: false
     }
   },
   mounted () {
     document.addEventListener('scroll', this.menuNameAppear)
   },
   methods: {
+    test () {
+      console.log('test')
+      this.burgerActive = !this.burgerActive
+    },
     menuNameAppear () {
       this.nameAppear = false
       document.removeEventListener('scroll', this.menuNameAppear)
     },
     openNav () {
+      this.burgerActive = !this.burgerActive
       this.show = !this.show
       document.getElementById('myNav').style.height = '100%'
     },
     closeNav () {
+      this.burgerActive = !this.burgerActive
       this.show = !this.show
       document.getElementById('myNav').style.height = '0%'
     }
@@ -90,6 +107,40 @@ export default {
 </script>
 
 <style>
+.hamburger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #000;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform .8s, background-color .8s, opacity .5s;
+  opacity: .25s;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(13px)
+  rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-13px)
+  rotate(-45deg);
+  background-color: #fff;
+}
+
 .borderedDiv {
   border-left: 2px solid #000!important;
 }
